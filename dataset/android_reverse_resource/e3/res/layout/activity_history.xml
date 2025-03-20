@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.08">
+        <TabHost android:id="@id/tabHost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/tab1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/tab2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/tab3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+    <ListView android:id="@id/mobile_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.79" />
+    <LinearLayout android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.13">
+        <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="wrap_content" android:layout_height="wrap_content" ads:adSize="BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</LinearLayout>

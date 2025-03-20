@@ -1,0 +1,13 @@
+digraph "CallGraph" {
+    node [style="rounded,bold,filled"];
+    node [shape=box];
+    "Root" [label="Root",];
+    "com.benoitletondor.easybudgetapp.view.MainActivity: void onCreate(android.os.Bundle)" [label="MainActivity(onCreate)",];
+    "Root"->"com.benoitletondor.easybudgetapp.view.MainActivity: void onCreate(android.os.Bundle)" [label="SYMBOLIC",style=bold,color=black,];
+    "com.benoitletondor.easybudgetapp.view.WelcomeActivity: void onCreate(android.os.Bundle)" [label="WelcomeActivity(onCreate)",];
+    "com.benoitletondor.easybudgetapp.view.MainActivity: void onCreate(android.os.Bundle)"->"com.benoitletondor.easybudgetapp.view.WelcomeActivity: void onCreate(android.os.Bundle)" [label="IPC",style=bold,color=dodgerblue,];
+    "com.benoitletondor.easybudgetapp.view.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)" [label="MainActivity(onCreateOptionsMenu)",];
+    "Root"->"com.benoitletondor.easybudgetapp.view.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)" [label="SYMBOLIC",style=bold,color=black,];
+    "com.benoitletondor.easybudgetapp.view.MainActivity$3: void onClick(android.view.View)" [label="MainActivity$3(onClick)",];
+    "com.benoitletondor.easybudgetapp.view.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)"->"com.benoitletondor.easybudgetapp.view.MainActivity$3: void onClick(android.view.View)" [label="GUI (2131689620)",style=bold,color=firebrick,];
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:paddingTop="@dimen/half_margin" android:paddingBottom="@dimen/half_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/activity_horizontal_margin" android:paddingEnd="@dimen/activity_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:theme="@style/Text_Body1" android:gravity="start" android:layout_gravity="center" android:id="@id/tv_category" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <TextView android:theme="@style/Text_Body1" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/tv_total" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+constantId,packageIn,methodIn,methodRefClass,methodRef,codeUnit,varName,varClass,varRefClass
+12,com.moonpi.swiftnotes.MainActivity,onCreate,com.moonpi.swiftnotes.MainActivity,setRequestedOrientation,virtualinvoke $r0.<com.moonpi.swiftnotes.MainActivity: void setRequestedOrientation(int)>(12),,,
+2130903068,com.moonpi.swiftnotes.MainActivity,onCreate,com.moonpi.swiftnotes.MainActivity,setContentView,virtualinvoke $r0.<com.moonpi.swiftnotes.MainActivity: void setContentView(int)>(2130903068),,,
+2131427418,com.moonpi.swiftnotes.MainActivity,onCreate,com.moonpi.swiftnotes.MainActivity,findViewById,$r8 = virtualinvoke $r0.<com.moonpi.swiftnotes.MainActivity: android.view.View findViewById(int)>(2131427418),toolbar,android.support.v7.widget.Toolbar,com.moonpi.swiftnotes.MainActivity
+2131427419,com.moonpi.swiftnotes.MainActivity,onCreate,com.moonpi.swiftnotes.MainActivity,findViewById,$r8 = virtualinvoke $r0.<com.moonpi.swiftnotes.MainActivity: android.view.View findViewById(int)>(2131427419),,,
+2131427420,com.moonpi.swiftnotes.MainActivity,onCreate,com.moonpi.swiftnotes.MainActivity,findViewById,$r8 = virtualinvoke $r0.<com.moonpi.swiftnotes.MainActivity: android.view.View findViewById(int)>(2131427420),newNote,android.widget.ImageButton,com.moonpi.swiftnotes.MainActivity
+2131427421,com.moonpi.swiftnotes.MainActivity,onCreate,com.moonpi.swiftnotes.MainActivity,findViewById,$r8 = virtualinvoke $r0.<com.moonpi.swiftnotes.MainActivity: android.view.View findViewById(int)>(2131427421),noNotes,android.widget.TextView,com.moonpi.swiftnotes.MainActivity
+3,com.moonpi.swiftnotes.MainActivity,onCreate,android.widget.ListView,setChoiceMode,virtualinvoke $r10.<android.widget.ListView: void setChoiceMode(int)>(3),,,
+0,com.moonpi.swiftnotes.MainActivity,onCreate,android.widget.TextView,setVisibility,virtualinvoke $r12.<android.widget.TextView: void setVisibility(int)>(0),,,
+7,com.moonpi.swiftnotes.MainActivity,onCreate,com.moonpi.swiftnotes.MainActivity,setRequestedOrientation,virtualinvoke $r0.<com.moonpi.swiftnotes.MainActivity: void setRequestedOrientation(int)>(7),,,
+4,com.moonpi.swiftnotes.MainActivity,onCreate,android.widget.TextView,setVisibility,virtualinvoke $r12.<android.widget.TextView: void setVisibility(int)>(4),,,

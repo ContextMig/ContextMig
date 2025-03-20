@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ordenation_alphabetical_style_list_array">
+        <item>الترتيب الاساسي</item>
+        <item>ترتيب تصاعدي ابجدي</item>
+        <item>ترتيب تنازلي ابجدي</item>
+    </string-array>
+    <string-array name="ordenation_checked_style_list_array">
+        <item>الترتيب الاساسي</item>
+        <item>المراجعة للاسفل</item>
+        <item>المراجعة للاعلى</item>
+    </string-array>
+</resources>

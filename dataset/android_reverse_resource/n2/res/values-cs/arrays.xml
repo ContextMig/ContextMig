@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colourNames">
+        <item>Modrá</item>
+        <item>Tyrkysová</item>
+        <item>Zelená</item>
+        <item>Žlutá</item>
+        <item>Oranžová</item>
+        <item>Červená</item>
+        <item>Růžová</item>
+        <item>Fialová</item>
+        <item>Bílá</item>
+    </string-array>
+    <string-array name="fontSizeNames">
+        <item>Malé</item>
+        <item>Střední</item>
+        <item>Velké</item>
+    </string-array>
+</resources>

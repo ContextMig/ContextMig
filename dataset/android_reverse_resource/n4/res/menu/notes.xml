@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_drawer_search" android:id="@id/notes_menu_$_search" android:orderInCategory="0" android:title="Search" android:showAsAction="always" android:actionViewClass="android.widget.SearchView" />
+    <item android:icon="@drawable/ic_action_content_edit" android:id="@id/notes_menu_$_add" android:orderInCategory="1" android:title="Add" android:showAsAction="always" />
+</menu>

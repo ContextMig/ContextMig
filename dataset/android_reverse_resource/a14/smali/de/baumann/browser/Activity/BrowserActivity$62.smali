@@ -1,0 +1,60 @@
+.class Lde/baumann/browser/Activity/BrowserActivity$62;
+.super Ljava/lang/Object;
+.source "BrowserActivity.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lde/baumann/browser/Activity/BrowserActivity;->closeTabConfirmation(Ljava/lang/Runnable;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lde/baumann/browser/Activity/BrowserActivity;
+
+.field final synthetic val$okAction:Ljava/lang/Runnable;
+
+
+# direct methods
+.method constructor <init>(Lde/baumann/browser/Activity/BrowserActivity;Ljava/lang/Runnable;)V
+    .locals 0
+
+    .line 2555
+    iput-object p1, p0, Lde/baumann/browser/Activity/BrowserActivity$62;->this$0:Lde/baumann/browser/Activity/BrowserActivity;
+
+    iput-object p2, p0, Lde/baumann/browser/Activity/BrowserActivity$62;->val$okAction:Ljava/lang/Runnable;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 0
+
+    .line 2558
+    iget-object p1, p0, Lde/baumann/browser/Activity/BrowserActivity$62;->val$okAction:Ljava/lang/Runnable;
+
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+
+    .line 2559
+    iget-object p1, p0, Lde/baumann/browser/Activity/BrowserActivity$62;->this$0:Lde/baumann/browser/Activity/BrowserActivity;
+
+    invoke-static {p1}, Lde/baumann/browser/Activity/BrowserActivity;->access$600(Lde/baumann/browser/Activity/BrowserActivity;)Landroid/support/design/widget/BottomSheetDialog;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/support/design/widget/BottomSheetDialog;->cancel()V
+
+    return-void
+.end method

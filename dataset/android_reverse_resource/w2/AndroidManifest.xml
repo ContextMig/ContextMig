@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.asdtm.goodweather" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:debuggable="true" android:icon="@mipmap/ic_launcher" android:installLocation="internalOnly" android:label="@string/app_name" android:name="org.asdtm.goodweather.GoodWeatherApp" android:supportsRtl="true" android:theme="@style/AppThemeLight">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="org.asdtm.goodweather.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/nav_menu_settings" android:name="org.asdtm.goodweather.SettingsActivity" android:parentActivityName="org.asdtm.goodweather.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
+        </activity>
+        <activity android:label="@string/title_activity_search" android:name="org.asdtm.goodweather.SearchActivity" android:parentActivityName="org.asdtm.goodweather.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:label="@string/label_activity_weather_forecast" android:name="org.asdtm.goodweather.WeatherForecastActivity" android:parentActivityName="org.asdtm.goodweather.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
+        </activity>
+        <activity android:label="@string/label_activity_graphs" android:name="org.asdtm.goodweather.GraphsActivity" android:parentActivityName="org.asdtm.goodweather.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="org.asdtm.goodweather.LicenseActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:pathPrefix="/android_asset/licenses/" android:scheme="file"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="org.asdtm.goodweather.receiver.StartupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.asdtm.goodweather.widget.LessWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="org.asdtm.goodweather.action.FORCED_APPWIDGET_UPDATE"/>
+                <action android:name="org.asdtm.goodweather.action.APPWIDGET_THEME_CHANGED"/>
+                <action android:name="org.asdtm.goodweather.action.APPWIDGET_UPDATE_PERIOD_CHANGED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider_less"/>
+        </receiver>
+        <receiver android:name="org.asdtm.goodweather.widget.MoreWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="org.asdtm.goodweather.action.FORCED_APPWIDGET_UPDATE"/>
+                <action android:name="org.asdtm.goodweather.action.APPWIDGET_THEME_CHANGED"/>
+                <action android:name="org.asdtm.goodweather.action.APPWIDGET_UPDATE_PERIOD_CHANGED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider_more"/>
+        </receiver>
+        <service android:name="org.asdtm.goodweather.service.NotificationService"/>
+        <service android:name="org.asdtm.goodweather.widget.LessWidgetService"/>
+        <service android:name="org.asdtm.goodweather.widget.MoreWidgetService"/>
+        <service android:name="org.asdtm.goodweather.service.CurrentWeatherService"/>
+        <service android:name="org.asdtm.goodweather.service.LocationUpdateService"/>
+        <meta-data android:name="android.support.VERSION" android:value="25.4.0"/>
+    </application>
+</manifest>

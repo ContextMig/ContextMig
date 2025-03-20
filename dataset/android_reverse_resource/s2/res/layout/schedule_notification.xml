@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" style="@style/matchWrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/purple_blue_selector" android:id="@id/schedule_notificatin_display_time" android:padding="@dimen/thirty_dps" android:clickable="true" style="@style/matchWrap" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/purple_blue_selector" android:id="@id/schedule_notificatin_display_date" android:paddingLeft="@dimen/thirty_dps" android:paddingRight="@dimen/thirty_dps" android:paddingBottom="@dimen/thirty_dps" android:clickable="true" style="@style/matchWrap" />
+    <View android:background="@color/black_brake" android:layout_width="fill_parent" android:layout_height="@dimen/one_dps" />
+    <LinearLayout android:orientation="horizontal" android:weightSum="2.0" style="@style/matchWrap">
+        <Button android:textSize="14.0sp" android:id="@id/schedule_notificatin_cancel" android:background="@drawable/button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:background="@color/black_brake" android:layout_width="@dimen/one_dps" android:layout_height="fill_parent" />
+        <Button android:textSize="14.0sp" android:id="@id/schedule_notificatin_schedule" android:background="@drawable/button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/schedule" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

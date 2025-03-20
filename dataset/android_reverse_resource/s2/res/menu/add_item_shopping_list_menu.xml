@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_accept" android:id="@id/action_done" android:title="@string/add_list" android:showAsAction="ifRoom" yourapp:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action_cancel" android:id="@id/action_cancel" android:visible="false" android:title="@android:string/cancel" android:showAsAction="ifRoom" yourapp:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action" android:id="@id/search" android:title="Search" android:showAsAction="collapseActionView|ifRoom" android:actionViewClass="android.widget.SearchView" />
+    <item android:id="@id/action_select_all" android:title="@string/select_all" android:showAsAction="never" />
+    <item android:id="@id/action_delete_selecteds" android:title="@string/delete_selecteds" android:showAsAction="never" />
+    <item android:id="@id/action_delete_all" android:title="@string/delete_all" android:showAsAction="never" />
+    <item android:id="@id/action_barcode_scan" android:title="@string/barcode_scan" android:showAsAction="never" />
+    <item android:id="@id/action_share" android:title="@string/share" android:showAsAction="never" />
+    <item android:id="@id/action_settings" android:title="@string/settings" android:showAsAction="never" />
+</menu>

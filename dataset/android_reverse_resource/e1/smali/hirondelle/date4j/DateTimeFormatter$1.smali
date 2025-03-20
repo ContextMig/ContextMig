@@ -1,0 +1,14 @@
+.class synthetic Lhirondelle/date4j/DateTimeFormatter$1;
+.super Ljava/lang/Object;
+.source "DateTimeFormatter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lhirondelle/date4j/DateTimeFormatter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

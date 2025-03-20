@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_edit_expense_choices">
+        <item>Modifica l’uscita</item>
+        <item>Elimina l’uscita</item>
+    </string-array>
+    <string-array name="dialog_edit_income_choices">
+        <item>Modifica l’importo</item>
+        <item>Elimina l’importo</item>
+    </string-array>
+    <string-array name="dialog_edit_recurring_expense_choices">
+        <item>Modifica questo elemento</item>
+        <item>Modifica soltanto questo elemento</item>
+        <item>Elimina tutti gli elementi seguenti</item>
+        <item>Elimina tutti gli elementi precedenti</item>
+        <item>Elimina tutto</item>
+    </string-array>
+    <string-array name="dialog_edit_recurring_income_choices">
+        <item>Modifica questo elemento</item>
+        <item>Modifica soltanto questo elemento</item>
+        <item>Elimina tutti gli elementi seguenti</item>
+        <item>Elimina tutti gli elementi precedenti</item>
+        <item>Elimina tutto</item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+.class final Lcom/dropbox/sync/android/NativeEnv$3;
+.super Ljava/lang/Object;
+.source "NativeEnv.java"
+
+# interfaces
+.implements Ljava/lang/Thread$UncaughtExceptionHandler;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/dropbox/sync/android/NativeEnv;->createThread(Ljava/lang/String;JJ)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 309
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
+    .locals 1
+    .param p1, "thread"    # Ljava/lang/Thread;
+    .param p2, "ex"    # Ljava/lang/Throwable;
+
+    .prologue
+    .line 312
+    invoke-static {}, Lcom/dropbox/sync/android/NativeEnv;->access$100()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {p1, p2, v0}, Lcom/dropbox/sync/android/CoreAssert;->uncaughtExceptionOnApiThread(Ljava/lang/Thread;Ljava/lang/Throwable;Ljava/lang/String;)V
+
+    .line 313
+    return-void
+.end method

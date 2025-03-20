@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/background_alternate_even" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/forecast_hour_start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/background_linear_dark_blue" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_very_large" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/temperature_text_view" android:paddingLeft="@dimen/padding_very_large" android:paddingRight="@dimen/padding_very_large" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_action_temperature" android:layout_weight="4.0" android:drawableStart="@drawable/ic_action_temperature" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/weather_conditions_image_view" android:padding="0.0dip" android:layout_width="@dimen/icon_dimension_horizontal" android:layout_height="@dimen/icon_dimension_vertical" android:layout_marginLeft="@dimen/gap_large" android:layout_marginRight="@dimen/gap_large" android:contentDescription="@string/icon_content_description_weather_conditions" android:layout_marginStart="@dimen/gap_large" android:layout_marginEnd="@dimen/gap_large" />
+                <TextView android:textSize="@dimen/text_size_medium" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/weather_conditions_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="?themed_gradient_drawable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gap_small" android:layout_marginBottom="@dimen/gap_small">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/atmospheric_pressure_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextView.SmallText" />
+                <TextView android:id="@id/humidity_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextView.SmallText" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/icon_dimension_horizontal" android:layout_height="fill_parent" android:src="@drawable/wind" android:scaleType="centerCrop" android:contentDescription="@string/icon_content_description_wind" />
+                <TextView android:gravity="start" android:layout_gravity="center_horizontal" android:id="@id/wind_text_view" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0.0dip" style="@style/TextView.SmallText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

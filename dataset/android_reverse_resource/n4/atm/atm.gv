@@ -1,0 +1,9 @@
+digraph "CallGraph" {
+    node [style="rounded,bold,filled"];
+    node [shape=box];
+    "Root" [label="Root",];
+    "chan.android.app.pocketnote.MainActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)" [label="MainActivity(onOptionsItemSelected)",];
+    "Root"->"chan.android.app.pocketnote.MainActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)" [label="SYMBOLIC",style=bold,color=black,];
+    "android.support.v4.widget.DrawerLayout: boolean isDrawerOpen(android.view.View)" [label="DrawerLayout(isDrawerOpen)",];
+    "chan.android.app.pocketnote.MainActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)"->"android.support.v4.widget.DrawerLayout: boolean isDrawerOpen(android.view.View)" [label="GUI (16908332)",style=bold,color=firebrick,];
+}

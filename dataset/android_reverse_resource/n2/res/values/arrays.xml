@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colourNames">
+        <item>Blue</item>
+        <item>Teal</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Red</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="fontSizeNames">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="colours">
+        <item>\#44A1EB</item>
+        <item>\#77DDBB</item>
+        <item>\#BBE535</item>
+        <item>\#F56545</item>
+        <item>\#FFBB22</item>
+        <item>\#EEEE22</item>
+        <item>\#FF5997</item>
+        <item>\#A767FF</item>
+        <item>\#FFFFFF</item>
+    </string-array>
+</resources>

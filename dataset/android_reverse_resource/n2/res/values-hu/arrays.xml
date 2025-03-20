@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colourNames">
+        <item>Kék</item>
+        <item>Kékeszöld</item>
+        <item>Zöld</item>
+        <item>Sárga</item>
+        <item>Narancs</item>
+        <item>P</item>
+        <item>Rózsaszín</item>
+        <item>Lila</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="fontSizeNames">
+        <item>Kicsi</item>
+        <item>K</item>
+        <item>N</item>
+    </string-array>
+</resources>

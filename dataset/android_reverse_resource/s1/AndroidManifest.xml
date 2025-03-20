@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="pl.com.andrzejgrzyb.shoppinglist" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:debuggable="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:configChanges="locale" android:label="@string/app_name" android:name="pl.com.andrzejgrzyb.shoppinglist.MainActivity" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale" android:name="pl.com.andrzejgrzyb.shoppinglist.ShoppingListViewActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="locale" android:name="pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity" android:noHistory="true" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="locale" android:name="pl.com.andrzejgrzyb.shoppinglist.ItemEditActivity" android:noHistory="true" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="locale" android:label="@string/title_activity_settings" android:name="pl.com.andrzejgrzyb.shoppinglist.SettingsActivity" android:parentActivityName="pl.com.andrzejgrzyb.shoppinglist.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="pl.com.andrzejgrzyb.shoppinglist.MainActivity"/>
+        </activity>
+    </application>
+</manifest>

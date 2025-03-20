@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_edit_expense_choices">
+        <item>Modifier la dépense</item>
+        <item>Supprimer la dépense</item>
+    </string-array>
+    <string-array name="dialog_edit_income_choices">
+        <item>Modifier le revenu</item>
+        <item>Supprimer le revenu</item>
+    </string-array>
+    <string-array name="dialog_edit_recurring_expense_choices">
+        <item>Modifier cette occurrence</item>
+        <item>Supprimer cette occurrence uniquement</item>
+        <item>Supprimer toutes les suivantes</item>
+        <item>Supprimer toutes les précédentes</item>
+        <item>Supprimer tout</item>
+    </string-array>
+    <string-array name="dialog_edit_recurring_income_choices">
+        <item>Modifier cette occurrence</item>
+        <item>Supprimer cette occurrence uniquement</item>
+        <item>Supprimer toutes les suivantes</item>
+        <item>Supprimer toutes les précédentes</item>
+        <item>Supprimer tout</item>
+    </string-array>
+</resources>

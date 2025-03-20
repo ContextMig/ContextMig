@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1" android:shrinkColumns="1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/idShoppingList" android:visibility="gone" />
+    <TableRow android:layout_marginLeft="@dimen/five_dps" android:layout_marginTop="@dimen/ten_dps" android:layout_marginBottom="@dimen/ten_dps" android:layout_marginStart="@dimen/five_dps">
+        <ImageView android:layout_gravity="center" android:id="@id/allItemsChecked" android:visibility="gone" android:src="@drawable/btn_check_on_holo_dark" style="@style/wrapMatch" />
+        <TextView android:gravity="center_vertical" android:layout_gravity="start|center" android:id="@id/nameShoppingList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ten_dps" android:text="aoisjdoajds" android:layout_marginStart="@dimen/ten_dps" style="@style/bigFont" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/view_date_shopping_list" style="@style/wrapWrap">
+            <TextView android:id="@id/dateShoppingList" android:layout_marginRight="25.0dip" android:text="22/26/2015" android:layout_marginEnd="25.0dip" style="@style/mediumFont" />
+            <TextView android:layout_gravity="end" android:id="@id/timeShoppingList" android:layout_marginRight="25.0dip" android:text="12:56" android:layout_marginEnd="25.0dip" style="@style/mediumFont" />
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

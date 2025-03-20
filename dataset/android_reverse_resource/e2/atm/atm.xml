@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cgNode>
+    <node>Root</node>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>luankevinferreira.expenses.MainActivity: void onCreate(android.os.Bundle)</node>
+            <outgoingEdge>
+                <label>NULL</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>luankevinferreira.expenses.MainActivity: void onClick(android.view.View)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>NULL</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>luankevinferreira.expenses.MainActivity: void onClick(android.view.View)</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+</cgNode>

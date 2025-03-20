@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ordenation_alphabetical_style_list_array">
+        <item>Ordem natural</item>
+        <item>Ordem alfabética crescente</item>
+        <item>Ordem alfabética decrescente</item>
+    </string-array>
+    <string-array name="ordenation_checked_style_list_array">
+        <item>Ordem natural</item>
+        <item>Marcados abaixo</item>
+        <item>Marcados acima</item>
+    </string-array>
+</resources>

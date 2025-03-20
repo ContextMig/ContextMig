@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cgNode>
+    <node>Root</node>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>org.asdtm.goodweather.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</node>
+            <outgoingEdge>
+                <label>2131689730</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>org.asdtm.goodweather.SearchActivity: void onCreate(android.os.Bundle)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>2131689730</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>android.support.v4.app.FragmentActivity: void startActivityForResult(android.content.Intent,int)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>2131689730</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>org.asdtm.goodweather.SearchActivity: boolean onOptionsItemSelected(android.view.MenuItem)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>2131689731</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>org.asdtm.goodweather.MainActivity: void requestLocation()</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>2131689729</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>org.asdtm.goodweather.ConnectionDetector: boolean isNetworkAvailableAndConnected()</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>org.asdtm.goodweather.MainActivity: void onCreate(android.os.Bundle)</node>
+            <outgoingEdge>
+                <label>2131689675</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>android.view.View$OnClickListener: void onClick(android.view.View)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>NULL</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener: void onRefresh()</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+</cgNode>

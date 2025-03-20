@@ -1,0 +1,6 @@
+constantId,packageIn,methodIn,methodRefClass,methodRef,codeUnit,varName,varClass,varRefClass
+2130903069,com.haringeymobile.ukweather.MainActivity,onCreate,com.haringeymobile.ukweather.MainActivity,setContentView,virtualinvoke $r0.<com.haringeymobile.ukweather.MainActivity: void setContentView(int)>(2130903069),,,
+2131492970,com.haringeymobile.ukweather.MainActivity,onCreate,com.haringeymobile.ukweather.MainActivity,findViewById,$r3 = virtualinvoke $r0.<com.haringeymobile.ukweather.MainActivity: android.view.View findViewById(int)>(2131492970),,,
+2131492961,com.haringeymobile.ukweather.MainActivity,onCreate,com.haringeymobile.ukweather.MainActivity,findViewById,$r3 = virtualinvoke $r0.<com.haringeymobile.ukweather.MainActivity: android.view.View findViewById(int)>(2131492961),,,
+2131492960,com.haringeymobile.ukweather.MainActivity,onCreate,android.support.v4.app.FragmentTransaction,add,virtualinvoke $r6.<android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String)>(2131492960, $r11, "list fragment"),,,
+2131689472,com.haringeymobile.ukweather.MainActivity,onCreateOptionsMenu,android.view.MenuInflater,inflate,virtualinvoke $r3.<android.view.MenuInflater: void inflate(int,android.view.Menu)>(2131689472, $r1),,,

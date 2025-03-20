@@ -1,0 +1,166 @@
+[
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "com.fsck.k9:id/actionbar_title_first",
+    "text": "Inbox",
+    "content-desc": "Inbox title view",
+    "clickable": "false",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a41",
+    "package": "com.fsck.k9",
+    "activity": ".activity.MessageList",
+    "ignorable": "false",
+    "event_type": "oracle",
+    "action": [
+      "wait_until_text_presence",
+      15,
+      "text",
+      "Inbox"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "com.fsck.k9:id/compose",
+    "text": "Compose button",
+    "content-desc": "Compose",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a41",
+    "package": "com.fsck.k9",
+    "activity": ".activity.MessageList",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.MultiAutoCompleteTextView",
+    "resource-id": "com.fsck.k9:id/to",
+    "text": "Recipient input field",
+    "content-desc": "Recipient input field",
+    "clickable": "true",
+    "password": "false",
+    "naf": "true",
+    "parent_text": "",
+    "sibling_text": "To",
+    "tid": "a41",
+    "package": "com.fsck.k9",
+    "activity": ".activity.MessageCompose",
+    "ignorable": "false",
+    "event_type": "oracle",
+    "action": [
+      "wait_until_element_presence",
+      15,
+      "id",
+      "com.fsck.k9:id/to"
+    ]
+  },
+  {
+    "class": "android.widget.MultiAutoCompleteTextView",
+    "resource-id": "com.fsck.k9:id/to",
+    "text": "Recipient input field",
+    "content-desc": "Recipient input field",
+    "clickable": "true",
+    "password": "false",
+    "naf": "true",
+    "parent_text": "",
+    "sibling_text": "To",
+    "tid": "a41",
+    "package": "com.fsck.k9",
+    "activity": ".activity.MessageCompose",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "send_keys_and_hide_keyboard",
+      "uci.seal@gmail.com"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "com.fsck.k9:id/subject",
+    "text": "SubjectSubject display",
+    "content-desc": "Subject input field",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a41",
+    "package": "com.fsck.k9",
+    "activity": ".activity.MessageCompose",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "send_keys",
+      "ICSTSuperCool"
+    ]
+  },
+  {
+    "class": "android.widget.EditText",
+    "resource-id": "com.fsck.k9:id/message_content",
+    "text": "Message text",
+    "content-desc": "Message body input",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a41",
+    "package": "com.fsck.k9",
+    "activity": ".activity.MessageCompose",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "send_keys",
+      "ICSTSuperCoolBody"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "com.fsck.k9:id/send",
+    "text": "Send button",
+    "content-desc": "Send",
+    "clickable": "true",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a41",
+    "package": "com.fsck.k9",
+    "activity": ".activity.MessageCompose",
+    "ignorable": "false",
+    "event_type": "gui",
+    "action": [
+      "click"
+    ]
+  },
+  {
+    "class": "android.widget.TextView",
+    "resource-id": "com.fsck.k9:id/subject",
+    "text": "ICSTSuperCoolSubject display",
+    "content-desc": "Subject input field",
+    "clickable": "false",
+    "password": "false",
+    "naf": "",
+    "parent_text": "",
+    "sibling_text": "",
+    "tid": "a41",
+    "package": "com.fsck.k9",
+    "activity": ".activity.MessageList",
+    "ignorable": "false",
+    "event_type": "oracle",
+    "action": [
+      "wait_until_text_presence",
+      20,
+      "text",
+      "ICSTSuperCool"
+    ]
+  }
+]

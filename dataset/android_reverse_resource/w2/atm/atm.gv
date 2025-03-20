@@ -1,0 +1,23 @@
+digraph "CallGraph" {
+    node [style="rounded,bold,filled"];
+    node [shape=box];
+    "Root" [label="Root",];
+    "org.asdtm.goodweather.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)" [label="MainActivity(onOptionsItemSelected)",];
+    "Root"->"org.asdtm.goodweather.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)" [label="SYMBOLIC",style=bold,color=black,];
+    "org.asdtm.goodweather.SearchActivity: void onCreate(android.os.Bundle)" [label="SearchActivity(onCreate)",];
+    "org.asdtm.goodweather.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)"->"org.asdtm.goodweather.SearchActivity: void onCreate(android.os.Bundle)" [label="GUI (2131689730)",style=bold,color=firebrick,];
+    "android.support.v4.app.FragmentActivity: void startActivityForResult(android.content.Intent,int)" [label="FragmentActivity(startActivityForResult)",];
+    "org.asdtm.goodweather.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)"->"android.support.v4.app.FragmentActivity: void startActivityForResult(android.content.Intent,int)" [label="GUI (2131689730)",style=bold,color=firebrick,];
+    "org.asdtm.goodweather.SearchActivity: boolean onOptionsItemSelected(android.view.MenuItem)" [label="SearchActivity(onOptionsItemSelected)",];
+    "org.asdtm.goodweather.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)"->"org.asdtm.goodweather.SearchActivity: boolean onOptionsItemSelected(android.view.MenuItem)" [label="GUI (2131689730)",style=bold,color=firebrick,];
+    "org.asdtm.goodweather.MainActivity: void requestLocation()" [label="MainActivity(requestLocation)",];
+    "org.asdtm.goodweather.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)"->"org.asdtm.goodweather.MainActivity: void requestLocation()" [label="GUI (2131689731)",style=bold,color=firebrick,];
+    "org.asdtm.goodweather.ConnectionDetector: boolean isNetworkAvailableAndConnected()" [label="ConnectionDetector(isNetworkAvailableAndConnected)",];
+    "org.asdtm.goodweather.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)"->"org.asdtm.goodweather.ConnectionDetector: boolean isNetworkAvailableAndConnected()" [label="GUI (2131689729)",style=bold,color=firebrick,];
+    "org.asdtm.goodweather.MainActivity: void onCreate(android.os.Bundle)" [label="MainActivity(onCreate)",];
+    "Root"->"org.asdtm.goodweather.MainActivity: void onCreate(android.os.Bundle)" [label="SYMBOLIC",style=bold,color=black,];
+    "android.view.View$OnClickListener: void onClick(android.view.View)" [label="View$OnClickListener(onClick)",];
+    "org.asdtm.goodweather.MainActivity: void onCreate(android.os.Bundle)"->"android.view.View$OnClickListener: void onClick(android.view.View)" [label="GUI (2131689675)",style=bold,color=firebrick,];
+    "android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener: void onRefresh()" [label="SwipeRefreshLayout$OnRefreshListener(onRefresh)",];
+    "org.asdtm.goodweather.MainActivity: void onCreate(android.os.Bundle)"->"android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener: void onRefresh()" [label="GUI (NULL)",style=bold,color=firebrick,];
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cgNode>
+    <node>Root</node>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>chan.android.app.pocketnote.MainActivity: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)</node>
+            <outgoingEdge>
+                <label>16908332</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>android.support.v4.widget.DrawerLayout: boolean isDrawerOpen(android.view.View)</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+</cgNode>

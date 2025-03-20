@@ -1,0 +1,40 @@
+version: 2.11.0
+apkFileName: com.blogspot.e_kanivets.moneytracker.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 17
+  targetSdkVersion: 22
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 23
+  versionName: 1.8.7
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- png
+- META-INF/android.arch.core_runtime.version
+- META-INF/android.arch.lifecycle_livedata-core.version
+- META-INF/android.arch.lifecycle_runtime.version
+- META-INF/android.arch.lifecycle_viewmodel.version
+- META-INF/com.android.support_animated-vector-drawable.version
+- META-INF/com.android.support_appcompat-v7.version
+- META-INF/com.android.support_design.version
+- META-INF/com.android.support_recyclerview-v7.version
+- META-INF/com.android.support_support-compat.version
+- META-INF/com.android.support_support-core-ui.version
+- META-INF/com.android.support_support-core-utils.version
+- META-INF/com.android.support_support-fragment.version
+- META-INF/com.android.support_support-media-compat.version
+- META-INF/com.android.support_support-v4.version
+- META-INF/com.android.support_support-vector-drawable.version
+- META-INF/com.android.support_transition.version
+- META-INF/services/com.fasterxml.jackson.core.JsonFactory
+- sdk-version.txt

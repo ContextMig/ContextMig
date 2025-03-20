@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/fsck/k9/activity/compose/RecipientPresenter$RecipientsChangedListener;
+.super Ljava/lang/Object;
+.source "RecipientPresenter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/fsck/k9/activity/compose/RecipientPresenter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "RecipientsChangedListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onRecipientsChanged()V
+.end method

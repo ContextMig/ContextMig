@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_login" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <ImageView android:id="@id/app_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/web_hi_res_128dp" android:adjustViewBounds="false" android:contentDescription="@string/desc_app_icon" />
+        <TextView android:textSize="36.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/app_name" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signed_out" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/detail" android:padding="10.0dip" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="5" android:fadeScrollbars="true" />
+    </LinearLayout>
+    <RelativeLayout android:background="@color/colorAccentDark" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/sign_in_and_continue_buttons" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.google.android.gms.common.SignInButton android:id="@id/sign_in_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/continue_without_signin" />
+            <Button android:id="@id/continue_without_signin_button" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:text="@string/continue_without_signin" android:layout_weight="1.0" android:onClick="goToMainActivity" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

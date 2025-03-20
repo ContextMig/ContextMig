@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:title="@string/default_account" android:key="@string/pref_default_account" android:summary="%s" />
+    <ListPreference android:title="@string/default_currency" android:key="@string/pref_default_currency" android:summary="%s" />
+    <ListPreference android:title="@string/display_precision" android:key="@string/pref_display_precision" android:summary="%s" />
+    <Preference android:title="About" android:key="@string/pref_about">
+        <intent android:targetPackage="com.blogspot.e_kanivets.moneytracker" android:action="android.intent.action.VIEW" android:targetClass="com.blogspot.e_kanivets.moneytracker.activity.AboutActivity" />
+    </Preference>
+</PreferenceScreen>

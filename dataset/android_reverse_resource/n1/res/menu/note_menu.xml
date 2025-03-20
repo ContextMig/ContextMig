@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_done" android:id="@id/action_save_changes" android:orderInCategory="1" android:title="@string/note_action_save_changes" android:showAsAction="always" />
+    <item android:id="@id/action_discard_changes" android:orderInCategory="2" android:title="@string/note_action_discard_changes" android:showAsAction="never" />
+</menu>

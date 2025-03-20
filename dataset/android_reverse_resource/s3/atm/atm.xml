@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cgNode>
+    <node>Root</node>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.main.SplashActivity: void onCreate(android.os.Bundle)</node>
+            <outgoingEdge>
+                <type>IPC</type>
+                <toNode>
+                    <node>privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.tutorial.TutorialActivity: void onCreate(android.os.Bundle)</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+</cgNode>

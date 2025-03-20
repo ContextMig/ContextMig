@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/pref_language_list_titles" android:title="@string/pref_title_language" android:key="@string/pref_key_language" android:defaultValue="" android:positiveButtonText="@null" android:negativeButtonText="@string/cancel" android:entryValues="@array/pref_language_list_values" />
+    <PreferenceCategory android:title="@string/pref_cat_sharing" />
+    <CheckBoxPreference android:title="@string/pref_title_share_list_title" android:key="@string/pref_key_share_list_title" android:summary="@string/pref_summary_share_list_title" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/pref_title_share_list_desc" android:key="@string/pref_key_share_list_desc" android:summary="@string/pref_summary_share_list_desc" android:defaultValue="true" />
+    <PreferenceCategory android:title="@string/pref_cat_info" />
+    <Preference android:title="@string/pref_title_version" android:key="@string/pref_title_version" android:summary="@string/versionName" />
+</PreferenceScreen>

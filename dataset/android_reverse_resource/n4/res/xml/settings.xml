@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Checkbox">
+        <CheckBoxPreference android:title="Sound" android:key="pref_sound" android:summary="What the heck is this?" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="General">
+        <ListPreference android:entries="@array/colors_entry" android:title="Color" android:key="pref_color_list" android:summary="Pick your default color" android:entryValues="@array/colors_value" />
+        <ListPreference android:entries="@array/colors_entry" android:title="Sorting" android:key="pref_color_list" android:summary="Pick your default color" android:entryValues="@array/colors_value" />
+    </PreferenceCategory>
+</PreferenceScreen>

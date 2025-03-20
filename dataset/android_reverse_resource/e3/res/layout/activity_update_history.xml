@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:layout_gravity="center_horizontal" android:id="@id/editName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:hint="Note" android:maxLength="25" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:layout_gravity="center_horizontal" android:id="@id/editValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Value" android:ems="10" android:maxLength="12" android:layout_weight="1.0" android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/updateButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_item_text" android:layout_weight="1.0" android:onClick="UpdateButtonClicked" />
+        <Button android:id="@id/button7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_item_text" android:layout_weight="1.0" android:onClick="DeleteButtonClicked" />
+    </LinearLayout>
+    <Button android:id="@id/cancelButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel_item_text" android:onClick="CancelButtonClicked" />
+</LinearLayout>

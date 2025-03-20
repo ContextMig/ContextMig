@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <application android:allowBackup="true" android:debuggable="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.main.SplashActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.tutorial.TutorialActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.main.MainActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <receiver android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.shoppinglist.reminder.ReminderReceiver"/>
+        <service android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.shoppinglist.reminder.ReminderSchedulingService"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/activity_shopping_list" android:launchMode="singleTop" android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.products.ProductsActivity" android:parentActivityName="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.main.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.main.MainActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/activity_shopping_list" android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.products.PhotoPreviewActivity" android:parentActivityName="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.products.ProductsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.products.ProductsActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/activity_delete_products" android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.deleteproducts.DeleteProductsActivity" android:parentActivityName="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.deleteproducts.DeleteProductsActivity" android:theme="@style/DeleteTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.deleteproducts.DeleteProductsActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/activity_delete_lists" android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.deletelists.DeleteListsActivity" android:parentActivityName="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.main.MainActivity" android:theme="@style/DeleteTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.main.MainActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/statistics" android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.statistics.StatisticsActivity" android:parentActivityName="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.main.MainActivity" android:theme="@style/AppTheme.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.main.MainActivity"/>
+        </activity>
+        <activity android:label="@string/app_name" android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.camera.CameraActivity" android:parentActivityName="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.products.ProductsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.products.ProductsActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/about" android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.about.AboutActivity" android:parentActivityName="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.main.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.main.MainActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/help" android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.help.HelpActivity" android:parentActivityName="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.main.MainActivity" android:theme="@style/AppTheme.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.main.MainActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_settings" android:name="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.settings.SettingsActivity" android:parentActivityName="privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.ui.main.MainActivity" android:theme="@style/AppTheme.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.main.MainActivity"/>
+        </activity>
+    </application>
+</manifest>

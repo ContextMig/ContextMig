@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currency_desimal_array">
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>0</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="currency_name_array">
+        <item>kr</item>
+        <item>$</item>
+        <item>€</item>
+        <item>¥</item>
+        <item>£</item>
+        <item>₹</item>
+        <item>₽</item>
+    </string-array>
+    <string-array name="money_spinner_array">
+        <item>@string/NOK</item>
+        <item>@string/USD</item>
+        <item>@string/EUR</item>
+        <item>@string/JPY</item>
+        <item>@string/GBP</item>
+        <item>@string/INR</item>
+        <item>@string/RUB</item>
+    </string-array>
+    <string-array name="spinner_array">
+        <item>@string/spinner_title</item>
+        <item>@string/spinner_bi_week</item>
+        <item>@string/spinner_week</item>
+        <item>@string/spinner_day</item>
+        <item>@string/spinner_year</item>
+    </string-array>
+</resources>

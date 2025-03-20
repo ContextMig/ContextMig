@@ -1,0 +1,10 @@
+This test case is testing the functionality of adding a new task in the MinimalToDo app, verifying the presence of the task, and then deleting the task by swiping right.
+
+The detailed process with serial numbers is as follows:
+
+1. ACTION (ImageButton, com.rubenroy.minimaltodo:id/addToDoItemFAB, (), click, NULL) : Click on the 'Add' button to open the task creation screen.
+2. ACTION (EditText, com.rubenroy.minimaltodo:id/userToDoEditText, (), input, "Sample Todo") : Input the task title 'Sample Todo' into the task title field and hide the keyboard.
+3. ACTION (ImageButton, com.rubenroy.minimaltodo:id/makeToDoFloatingActionButton, (), click, NULL) : Click on the 'Done' button to save the task.
+4. ASSERT (TextView, com.rubenroy.minimaltodo:id/toDoListItemTextview, (), wait_until_text_presence, "Sample Todo") : Verify that the task with the title 'Sample Todo' is present within 10 seconds.
+5. ACTION (TextView, com.rubenroy.minimaltodo:id/toDoListItemTextview, (), swipe_right, NULL) : Swipe right on the task with the title 'Sample Todo' to delete it.
+6. ASSERT (, , (), wait_until_text_invisible, "Sample Todo") : Verify that the task with the title 'Sample Todo' is no longer visible within 10 seconds.

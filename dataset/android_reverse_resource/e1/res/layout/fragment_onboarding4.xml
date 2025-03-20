@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/accent" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/onboarding_screen4_top_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="95.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_done_white_48dp" />
+            <TextView android:textSize="30.0dip" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/onboarding_screen_4_title" />
+            <TextView android:textSize="18.0dip" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/onboarding_screen_4_message" />
+            <TextView android:textSize="20.0dip" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/onboarding_screen_4_message2" />
+            <TextView android:textSize="18.0dip" android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/onboarding_screen_4_message3" />
+            <TextView android:textSize="20.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/onboarding_screen_4_message4" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:theme="@style/BlueButton" android:textSize="20.0dip" android:gravity="center" android:id="@id/onboarding_screen4_next_button" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-65.0dip" android:layout_marginBottom="15.0dip" android:text="@string/onboarding_screen_4_cta" android:layout_below="@id/onboarding_screen4_top_layout" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+</RelativeLayout>

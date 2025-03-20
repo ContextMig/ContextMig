@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:stretchColumns="1" android:shrinkColumns="1" style="@style/matchWrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/idItemShoppingList" android:visibility="gone" />
+    <TableRow android:layout_marginTop="10.0dip" android:layout_marginBottom="3.0dip" style="@style/matchWrap">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/checkedItemShoppingList" android:focusable="false" style="@style/wrapWrap" />
+        <TextView android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/descriptionItemShoppingList" android:layout_marginRight="5.0dip" android:layout_marginEnd="5.0dip" style="@style/mediumFont" />
+        <TextView android:gravity="end|center" android:layout_gravity="center_vertical" android:id="@id/qtItemShoppingList" android:layout_marginRight="5.0dip" android:text="36" android:layout_marginEnd="5.0dip" style="@style/mediumFont" />
+        <TextView android:gravity="end|center" android:layout_gravity="center_vertical" android:id="@id/unitValueItemShoppingList" android:layout_width="70.0dip" android:layout_marginRight="5.0dip" android:text="R$ 89,00" android:layout_marginEnd="5.0dip" style="@style/mediumFont" />
+    </TableRow>
+    <TextView android:textSize="@dimen/extra_big_font" android:gravity="end|center" android:id="@id/totalItemShoppingList" android:layout_width="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="R$ 890,00" android:layout_marginEnd="5.0dip" style="@style/mediumFont" />
+</TableLayout>

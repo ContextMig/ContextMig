@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colors_entry">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Orange</item>
+    </string-array>
+    <string-array name="colors_value">
+        <item>1</item>
+        <item>7</item>
+        <item>30</item>
+        <item>0</item>
+    </string-array>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cgNode>
+    <node>Root</node>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>com.benoitletondor.easybudgetapp.view.MainActivity: void onCreate(android.os.Bundle)</node>
+            <outgoingEdge>
+                <type>IPC</type>
+                <toNode>
+                    <node>com.benoitletondor.easybudgetapp.view.WelcomeActivity: void onCreate(android.os.Bundle)</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>com.benoitletondor.easybudgetapp.view.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)</node>
+            <outgoingEdge>
+                <label>2131689620</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>com.benoitletondor.easybudgetapp.view.MainActivity$3: void onClick(android.view.View)</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+</cgNode>

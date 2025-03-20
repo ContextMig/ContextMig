@@ -1,0 +1,22 @@
+version: 2.11.0
+apkFileName: br.com.activity.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 12
+  targetSdkVersion: 19
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 25
+  versionName: 1.2.3
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- png

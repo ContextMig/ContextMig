@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_add_recurring" android:enabled="true" android:shortcutId="add_recurring_expense" android:shortcutShortLabel="@string/fab_add_monthly_expense" android:shortcutLongLabel="@string/fab_add_monthly_expense" android:shortcutDisabledMessage="@string/fab_add_monthly_expense">
+        <intent android:targetPackage="com.benoitletondor.easybudgetapp" android:action="android.intent.action.VIEW" android:targetClass="com.benoitletondor.easybudgetapp.view.MainActivity">
+            <extra android:name="intent.addrecurringexpense.show" android:value="true" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_add" android:enabled="true" android:shortcutId="add_expense" android:shortcutShortLabel="@string/fab_add_expense" android:shortcutLongLabel="@string/fab_add_expense" android:shortcutDisabledMessage="@string/fab_add_expense">
+        <intent android:targetPackage="com.benoitletondor.easybudgetapp" android:action="android.intent.action.VIEW" android:targetClass="com.benoitletondor.easybudgetapp.view.MainActivity">
+            <extra android:name="intent.addexpense.show" android:value="true" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

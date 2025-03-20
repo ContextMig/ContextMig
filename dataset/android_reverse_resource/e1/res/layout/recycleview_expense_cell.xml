@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/positive_indicator" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_label_red" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
+            <TextView android:textColor="@color/primary_text" android:ellipsize="end" android:id="@id/expense_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:maxLines="2" android:minLines="1" />
+            <TextView android:textStyle="bold" android:ellipsize="end" android:id="@id/expense_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:maxLines="1" android:minLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/recurring_indicator" android:layout_width="60.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginBottom="1.0dip" app:srcCompat="@drawable/ic_autorenew_grey_26dp" />
+            <TextView android:textSize="9.0dip" android:textColor="@color/secondary_text" android:id="@id/recurring_indicator_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="70.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

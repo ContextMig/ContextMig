@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/about_version_title" android:summary="@string/app_version" />
+    <Preference android:title="@string/about_source_title" android:summary="@string/tap_website">
+        <intent android:action="android.intent.action.VIEW" android:data="@string/source_url" />
+    </Preference>
+    <PreferenceCategory android:title="@string/about_developer_section">
+        <Preference android:title="@string/main_developer" android:summary="@string/tap_github">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/main_developer_url" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_original_section">
+        <Preference android:title="@string/original_creator" android:summary="@string/tap_website">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/original_creator_url" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_contributors_section">
+        <Preference android:title="@string/contributor_minty123" android:summary="@string/tap_github">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/contributor_minty123_url" />
+        </Preference>
+        <Preference android:title="@string/contributor_davydsantos" android:summary="@string/tap_github">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/contributor_davydsantos_url" />
+        </Preference>
+        <Preference android:title="@string/contributor_patcon" android:summary="@string/tap_github">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/contributor_patcon_url" />
+        </Preference>
+        <Preference android:title="@string/contributor_tommyalex" android:summary="@string/tap_github">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/contributor_tommyalex_url" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_translators_section">
+        <Preference android:title="@string/about_korean" android:summary="@string/translators_korean" />
+        <Preference android:title="@string/about_german" android:summary="@string/translators_german" />
+        <Preference android:title="@string/about_polish" android:summary="@string/translators_polish" />
+        <Preference android:title="@string/about_french" android:summary="@string/translators_french" />
+        <Preference android:title="@string/about_spanish" android:summary="@string/translators_spanish" />
+        <Preference android:title="@string/about_chinese_simplified" android:summary="@string/translators_chinese_simplified" />
+        <Preference android:title="@string/about_italian" android:summary="@string/translators_italian" />
+        <Preference android:title="@string/about_croatian" android:summary="@string/translators_croatian" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_libraries_section">
+        <Preference android:title="@string/library_anddown" android:summary="@string/licence_apache20" />
+    </PreferenceCategory>
+</PreferenceScreen>

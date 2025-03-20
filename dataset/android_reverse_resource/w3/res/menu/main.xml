@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weather="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_search" android:id="@id/mi_search_cities" android:title="@string/mi_search_title" android:titleCondensed="@string/city_search_hint" weather:showAsAction="always" weather:actionViewClass="android.support.v7.widget.SearchView" />
+    <item android:icon="@drawable/ic_add_content" android:id="@id/mi_add_city" android:title="Add city" weather:showAsAction="always" />
+    <item android:icon="@drawable/ic_action_overflow" android:id="@id/mi_main_submenu" android:title="@string/mi_submenu_title" weather:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/ic_home" android:id="@id/mi_city_management" android:title="@string/mi_city_management_title" weather:showAsAction="never" />
+            <item android:icon="@drawable/ic_settings" android:id="@id/mi_settings" android:title="@string/mi_settings_title" weather:showAsAction="never" />
+            <item android:icon="@drawable/ic_action_star_10" android:id="@id/mi_rate_application" android:title="@string/mi_rate_application_title" weather:showAsAction="never" />
+            <item android:icon="@drawable/ic_action_book" android:id="@id/mi_about" android:title="@string/mi_about_program_title" weather:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

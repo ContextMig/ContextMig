@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?selectableItemBackground" android:padding="@dimen/activity_horizontal_margin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/summary" style="@style/Text_Title" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/currency" android:layout_weight="1.0" style="@style/Text_Body1" />
+        <android.support.v7.widget.AppCompatSpinner android:id="@id/spinner_currency" android:layout_width="wrap_content" android:layout_height="25.0dip" />
+    </LinearLayout>
+    <include layout="@layout/view_divider" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/total" android:layout_weight="1.0" style="@style/Text_Body1" />
+        <TextView android:theme="@style/Text_Body2" android:gravity="end" android:id="@id/tv_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" />
+        <TextView android:theme="@style/Text_Body1" android:gravity="end" android:id="@id/tv_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" android:fontFamily="monospace" android:paddingStart="5.0dip" android:paddingEnd="@dimen/zero_margin" />
+    </LinearLayout>
+</LinearLayout>

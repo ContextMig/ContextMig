@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/normal_margin" android:paddingEnd="@dimen/half_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:theme="@style/Text_Body1" android:id="@id/tv_category" android:paddingTop="@dimen/half_margin" android:paddingBottom="@dimen/half_margin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel" android:contentDescription="@android:string/cancel" />
+</LinearLayout>

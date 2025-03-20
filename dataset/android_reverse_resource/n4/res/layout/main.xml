@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/main_$_drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/main_$_linearlayout_container" android:background="@drawable/shadow_main_drawer" android:layout_width="250.0dip" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/main_$_linearlayout_animated_background" android:layout_width="250.0dip" android:layout_height="100.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+                <chan.android.app.pocketnote.util.view.CircularImageView android:layout_gravity="center_vertical" android:id="@id/main_$_imageview_user" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_user" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/purple_11" android:layout_gravity="center_vertical" android:id="@id/main_$_textview_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Anonymous" />
+            </LinearLayout>
+        </FrameLayout>
+        <ListView android:layout_gravity="start" android:id="@id/main_$_listview_items" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/drawer_list_selector" android:divider="#ff444444" android:dividerHeight="1.0dip" android:choiceMode="singleChoice" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent" android:title="@string/settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/visualization_style">
+        <CheckBoxPreference android:title="@string/show_check_boxe_title" android:key="@string/user_preference_show_check_box" android:summary="@string/show_check_box_summary" />
+        <CheckBoxPreference android:title="@string/show_quantity_title" android:key="@string/user_preference_show_quantity" android:summary="@string/show_quantity_summary" />
+        <CheckBoxPreference android:title="@string/show_unit_value_title" android:key="@string/user_preference_show_unit_value" android:summary="@string/show_unit_value_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/ordenation_style">
+        <ListPreference android:entries="@array/ordenation_checked_style_list_array" android:title="@string/ordenation_checked_style_title" android:key="@string/user_preference_ordenation_checked_list" android:defaultValue="" android:entryValues="@array/ordenation_style_list_values" />
+        <ListPreference android:entries="@array/ordenation_alphabetical_style_list_array" android:title="@string/ordenation_alphabetical_style_title" android:key="@string/user_preference_ordenation_alphabetical_list" android:defaultValue="" android:entryValues="@array/ordenation_style_list_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_app">
+        <Preference android:title="@string/about" android:key="@string/user_preference_about_app" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/gr1" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_settings_black_24dp" android:id="@id/nav_settings" android:title="@string/nav_settings" />
+    </group>
+    <group android:id="@id/gr2" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_share_black_24dp" android:id="@id/nav_share" android:title="@string/nav_share" />
+        <item android:icon="@drawable/ic_star_black_24dp" android:id="@id/nav_rate" android:title="@string/nav_rate" />
+        <item android:icon="@drawable/ic_email_black_24dp" android:id="@id/nav_contact" android:title="@string/nav_contact" />
+        <item android:icon="@drawable/ic_login_grey600_24dp" android:id="@id/nav_signin" android:visible="false" android:title="@string/signin_with_google" />
+        <item android:icon="@drawable/ic_logout_grey600_24dp" android:id="@id/nav_signout" android:visible="false" android:title="@string/sign_out" />
+    </group>
+</menu>

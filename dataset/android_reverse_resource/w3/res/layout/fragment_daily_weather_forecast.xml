@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/background_radial_dark_blue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_alternate_even" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gap_small" android:layout_marginBottom="@dimen/gap_small">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/merged_temperature_and_city_views" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="end" android:id="@id/night_morning_evening_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextView.SmallText" />
+                <TextView android:gravity="start" android:id="@id/night_morning_evening_temperatures_text_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_action_temperature" android:layout_weight="1.0" android:drawableStart="@drawable/ic_action_temperature" style="@style/TextView.SmallText" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gap_small" android:layout_marginBottom="@dimen/gap_small" layout="@layout/merged_weather_condition_views" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gap_small" android:layout_marginBottom="@dimen/gap_small" layout="@layout/merged_pressure_humidity_and_wind_views" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/content" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/half_margin">
+            <TextView android:theme="@style/Text_Hint" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/convert_from" />
+            <android.support.v7.widget.AppCompatSpinner android:id="@id/spinner_from_currency" android:layout_width="fill_parent" android:layout_height="@dimen/spinner_height" />
+            <android.support.design.widget.TextInputLayout android:id="@id/til_buy" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/et_buy" android:nextFocusDown="@id/et_sell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/bank_buys" android:maxLines="1" android:ems="10" android:singleLine="true" android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/half_margin">
+            <TextView android:theme="@style/Text_Hint" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/convert_to" />
+            <android.support.v7.widget.AppCompatSpinner android:id="@id/spinner_to_currency" android:layout_width="fill_parent" android:layout_height="@dimen/spinner_height" />
+            <android.support.design.widget.TextInputLayout android:id="@id/til_sell" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/et_sell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/bank_sells" android:maxLines="1" android:ems="10" android:singleLine="true" android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

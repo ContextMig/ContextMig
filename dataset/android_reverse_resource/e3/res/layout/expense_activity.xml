@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/editText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:hint="@string/expense_name_input_text" android:maxLength="25" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/editText2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/expense_amount_input_text" android:ems="10" android:maxLength="12" android:layout_weight="1.0" android:inputType="numberDecimal" />
+        <Spinner android:id="@id/spinner2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/spinner_title" android:spinnerMode="dropdown" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <Button android:id="@id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_expense_button_text" android:layout_weight="1.0" android:onClick="AddButtonClicked" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/total_expenses_text" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/total_expense_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/default_total_expenses_value" />
+    </LinearLayout>
+    <ListView android:layout_gravity="bottom" android:id="@id/expenseList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:divider="@android:color/transparent" android:dividerHeight="10.0sp" />
+</LinearLayout>

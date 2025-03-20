@@ -1,0 +1,4 @@
+constantId,packageIn,methodIn,methodRefClass,methodRef,codeUnit,varName,varClass,varRefClass
+2131492957,me.writeily.PromptPinActivity,onCreate,me.writeily.PromptPinActivity,findViewById,$r4 = virtualinvoke $r0.<me.writeily.PromptPinActivity: android.view.View findViewById(int)>(2131492957),,,
+2131427333,me.writeily.PromptPinActivity,onCreate,android.content.res.Resources,getStringArray,$r7 = virtualinvoke $r6.<android.content.res.Resources: java.lang.String[] getStringArray(int)>(2131427333),,,
+2131099818,me.writeily.PromptPinActivity,onCreate,me.writeily.PromptPinActivity,getString,$r9 = virtualinvoke $r0.<me.writeily.PromptPinActivity: java.lang.String getString(int)>(2131099818),,,

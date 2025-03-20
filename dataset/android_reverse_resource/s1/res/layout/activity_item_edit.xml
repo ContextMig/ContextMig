@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:titleTextColor="@color/abc_primary_text_material_dark" app:subtitleTextColor="@color/abc_primary_text_material_dark" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText android:id="@id/item_name_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_item_name" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/text_quantity_textView" android:padding="@dimen/description_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_quantity" />
+            <Button android:id="@id/quantity_minus_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" style="?android:attr/buttonStyleSmall" />
+            <EditText android:gravity="center_horizontal" android:id="@id/item_quantity_edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:text="1" android:hint="@string/hint_item_quantity" android:singleLine="true" android:digits="0123456789,." android:inputType="phone" />
+            <Button android:id="@id/quantity_plus_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" style="?android:attr/buttonStyleSmall" />
+        </LinearLayout>
+        <pl.com.andrzejgrzyb.shoppinglist.FlowRadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/quantity_units_flow_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/quantity_unit_pcs_radio">
+            <RadioButton android:id="@id/quantity_unit_pcs_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_pcs" style="@style/QuantityUnitRadio" />
+            <RadioButton android:id="@id/quantity_unit_g_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_g" style="@style/QuantityUnitRadio" />
+            <RadioButton android:id="@id/quantity_unit_kg_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_kg" style="@style/QuantityUnitRadio" />
+            <RadioButton android:id="@id/quantity_unit_ml_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_ml" style="@style/QuantityUnitRadio" />
+            <RadioButton android:id="@id/quantity_unit_l_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_l" style="@style/QuantityUnitRadio" />
+            <RadioButton android:id="@id/quantity_unit_m_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_m" style="@style/QuantityUnitRadio" />
+            <RadioButton android:id="@id/quantity_unit_oz_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_oz" style="@style/QuantityUnitRadio" />
+            <RadioButton android:id="@id/quantity_unit_lb_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_lb" style="@style/QuantityUnitRadio" />
+            <RadioButton android:id="@id/quantity_unit_fl_oz_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_fl_oz" style="@style/QuantityUnitRadio" />
+            <RadioButton android:id="@id/quantity_unit_gal_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_gal" style="@style/QuantityUnitRadio" />
+            <RadioButton android:id="@id/quantity_unit_ft_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_quantity_unit_ft" style="@style/QuantityUnitRadio" />
+        </pl.com.andrzejgrzyb.shoppinglist.FlowRadioGroup>
+        <Button android:layout_gravity="center_horizontal" android:id="@id/addShoppingListButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_save" android:layout_weight="1.0" android:onClick="onClickSaveButton" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

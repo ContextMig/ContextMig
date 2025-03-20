@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colourNames">
+        <item>Blu</item>
+        <item>Verde acqua</item>
+        <item>Verde</item>
+        <item>Giallo</item>
+        <item>Arancione</item>
+        <item>Rosso</item>
+        <item>Rosa</item>
+        <item>Viola</item>
+        <item>Bianco</item>
+    </string-array>
+    <string-array name="fontSizeNames">
+        <item>Piccolo</item>
+        <item>Medio</item>
+        <item>Grande</item>
+    </string-array>
+</resources>

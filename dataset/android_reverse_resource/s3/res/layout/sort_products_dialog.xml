@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_ascencing_descending" />
+        <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/radiobutton_ascending" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_ascencing" />
+            <RadioButton android:id="@id/radiobutton_descending" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_descending" />
+        </RadioGroup>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by" />
+        <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/radiobutton_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_name" />
+            <RadioButton android:id="@id/radiobutton_store" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_store" />
+            <RadioButton android:id="@id/radiobutton_quantity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_quantity" />
+            <RadioButton android:id="@id/radiobutton_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_price" />
+            <RadioButton android:id="@id/radiobutton_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_category" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

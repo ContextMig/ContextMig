@@ -1,0 +1,29 @@
+digraph "CallGraph" {
+    node [style="rounded,bold,filled"];
+    node [shape=box];
+    "Root" [label="Root",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)" [label="MainActivity(onContextItemSelected)",];
+    "Root"->"pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)" [label="SYMBOLIC",style=bold,color=black,];
+    "pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity: void onCreate(android.os.Bundle)" [label="ShoppingListEditActivity(onCreate)",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)"->"pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity: void onCreate(android.os.Bundle)" [label="GUI (0)",style=bold,color=firebrick,];
+    "pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: android.content.Intent createShareIntent(java.lang.String)" [label="DbUtilities(createShareIntent)",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)"->"pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: android.content.Intent createShareIntent(java.lang.String)" [label="GUI (2)",style=bold,color=firebrick,];
+    "android.support.v4.widget.SimpleCursorAdapter: android.database.Cursor swapCursor(android.database.Cursor)" [label="SimpleCursorAdapter(swapCursor)",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)"->"android.support.v4.widget.SimpleCursorAdapter: android.database.Cursor swapCursor(android.database.Cursor)" [label="GUI (1)",style=bold,color=firebrick,];
+    "pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity: void onStart()" [label="ShoppingListEditActivity(onStart)",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)"->"pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity: void onStart()" [label="GUI (0)",style=bold,color=firebrick,];
+    "pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: android.database.Cursor getAllShoppingLists()" [label="DbUtilities(getAllShoppingLists)",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)"->"pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: android.database.Cursor getAllShoppingLists()" [label="GUI (1)",style=bold,color=firebrick,];
+    "pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: java.lang.String createShareString(android.database.Cursor,java.lang.String,java.lang.String)" [label="DbUtilities(createShareString)",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)"->"pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: java.lang.String createShareString(android.database.Cursor,java.lang.String,java.lang.String)" [label="GUI (2)",style=bold,color=firebrick,];
+    "pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: boolean deleteShoppingList(long)" [label="DbUtilities(deleteShoppingList)",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)"->"pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: boolean deleteShoppingList(long)" [label="GUI (1)",style=bold,color=firebrick,];
+    "pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: android.database.Cursor getShoppingListItemsCursor(long)" [label="DbUtilities(getShoppingListItemsCursor)",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)"->"pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: android.database.Cursor getShoppingListItemsCursor(long)" [label="GUI (2)",style=bold,color=firebrick,];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: void onCreate(android.os.Bundle)" [label="MainActivity(onCreate)",];
+    "Root"->"pl.com.andrzejgrzyb.shoppinglist.MainActivity: void onCreate(android.os.Bundle)" [label="SYMBOLIC",style=bold,color=black,];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity$1: void onClick(android.view.View)" [label="MainActivity$1(onClick)",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: void onCreate(android.os.Bundle)"->"pl.com.andrzejgrzyb.shoppinglist.MainActivity$1: void onClick(android.view.View)" [label="GUI (2131689606)",style=bold,color=firebrick,];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)" [label="MainActivity$3(onItemClick)",];
+    "pl.com.andrzejgrzyb.shoppinglist.MainActivity: void onCreate(android.os.Bundle)"->"pl.com.andrzejgrzyb.shoppinglist.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)" [label="GUI (NULL)",style=bold,color=firebrick,];
+}

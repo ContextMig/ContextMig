@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/label_edit_title_bottom_margin">
+        <EditText android:id="@id/label_name" android:hint="@string/label_title_hint" style="@style/LabelEditTitle" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/label_edit_select_color_text_size" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/label_edit_select_color_text_bottom_margin" android:text="@string/label_edit_color_select" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <CheckBox android:id="@id/color_1" android:background="@color/label_color_default" android:layout_marginLeft="0.0dip" style="@style/LabelEditColorCheckBox" />
+        <CheckBox android:id="@id/color_2" android:background="@color/label_color_red" style="@style/LabelEditColorCheckBox" />
+        <CheckBox android:id="@id/color_3" android:background="@color/label_color_orange" style="@style/LabelEditColorCheckBox" />
+        <CheckBox android:id="@id/color_4" android:background="@color/label_color_yellow" style="@style/LabelEditColorCheckBox" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/label_edit_radio_button_bottom_margin">
+        <CheckBox android:id="@id/color_5" android:background="@color/label_color_green" android:layout_marginLeft="0.0dip" style="@style/LabelEditColorCheckBox" />
+        <CheckBox android:id="@id/color_6" android:background="@color/label_color_blue" style="@style/LabelEditColorCheckBox" />
+        <CheckBox android:id="@id/color_7" android:background="@color/label_color_purple" style="@style/LabelEditColorCheckBox" />
+        <CheckBox android:id="@id/color_8" android:background="@color/label_color_grey" style="@style/LabelEditColorCheckBox" />
+    </LinearLayout>
+</LinearLayout>

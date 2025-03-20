@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="@color/white" android:paddingLeft="@dimen/statistics_padding_small" android:paddingTop="@dimen/statistics_padding" android:paddingBottom="@dimen/statistics_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/statistics_total_amout" android:layout_weight="0.5" />
+    <TextView android:textStyle="bold" android:textColor="@color/yellow" android:gravity="right" android:id="@id/textview_stats_total" android:padding="@dimen/statistics_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ph_total_amount" android:layout_weight="0.25" />
+    <TextView android:textStyle="bold" android:textColor="@color/yellow" android:gravity="left" android:id="@id/textview_stats_currency" android:padding="@dimen/statistics_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/currency" android:layout_weight="0.25" />
+</LinearLayout>

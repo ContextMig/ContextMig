@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search_white_48sp" android:id="@id/imageview_search" android:title="@string/search" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_sort_white_24sp" android:id="@id/imageview_sort" android:title="@string/sort_options" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_delete_white_24sp" android:id="@id/imageview_delete" android:title="@string/delete" app:showAsAction="ifRoom" />
+</menu>

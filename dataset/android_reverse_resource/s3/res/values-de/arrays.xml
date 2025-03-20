@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shopping_list_priority_spinner">
+        <item>Hoch</item>
+        <item>Normal</item>
+        <item>Priorität</item>
+    </string-array>
+    <string-array name="shopping_list_reminder_spinner">
+        <item>Minuten</item>
+        <item>Stunden</item>
+        <item>Tage</item>
+        <item>Wochen</item>
+        <item>Erinnerung</item>
+    </string-array>
+    <string-array name="statistics_enabled_text">
+        <item>Statistiken sind für diese Liste aktiviert.</item>
+        <item>Statistiken sind für diese Liste deaktiviert.</item>
+        <item></item>
+    </string-array>
+    <string-array name="statistics_months">
+        <item>Jan.</item>
+        <item>Febr.</item>
+        <item>März</item>
+        <item>Apr.</item>
+        <item>Mai</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Aug.</item>
+        <item>Sept.</item>
+        <item>Okt.</item>
+        <item>Nov.</item>
+        <item>Dez.</item>
+    </string-array>
+    <string-array name="statistics_spinner_group_by">
+        <item>Monat</item>
+        <item>Woche</item>
+        <item>Tag</item>
+        <item>Kategorie</item>
+        <item>Einkaufsort</item>
+        <item>Produkt</item>
+    </string-array>
+    <string-array name="statistics_spinner_values">
+        <item>Preis</item>
+        <item>Menge</item>
+    </string-array>
+</resources>

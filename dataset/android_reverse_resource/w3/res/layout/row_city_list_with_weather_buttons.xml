@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/city_name_in_list_row_text_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textIsSelectable="false" style="@style/TextView.VeryLargeText" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:id="@id/city_current_weather_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/gap_small" android:layout_weight="1.0" style="@style/GeneralClickable">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/gap_inside_general_button_small" android:src="@drawable/ic_assignment_returned" android:layout_weight="1.0" style="@style/ClickableImageView" />
+            <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/gap_inside_general_button_small" android:text="@string/button_text_current_weather_conditions" android:layout_weight="3.0" style="@style/ClickableTextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/city_daily_weather_forecast_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/gap_small" android:layout_weight="1.0" style="@style/GeneralClickable">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/gap_inside_general_button_small" android:src="@drawable/ic_octicon_calendar" android:layout_weight="1.0" style="@style/ClickableImageView" />
+            <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/gap_inside_general_button_small" android:text="@string/button_text_weather_forecast_daily" android:layout_weight="3.0" style="@style/ClickableTextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/city_three_hourly_weather_forecast_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/gap_small" android:layout_weight="1.0" style="@style/GeneralClickable">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/gap_inside_general_button_small" android:src="@drawable/ic_assignment" android:layout_weight="1.0" style="@style/ClickableImageView" />
+            <TextView android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/gap_inside_general_button_small" android:text="@string/button_text_weather_forecast_3_hourly" android:layout_weight="3.0" style="@style/ClickableTextView" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

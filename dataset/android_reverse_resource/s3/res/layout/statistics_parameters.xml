@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parameters" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/statistics_total" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.5">
+        <TextView android:paddingLeft="@dimen/statistics_padding_small" android:paddingTop="@dimen/statistics_padding" android:paddingBottom="@dimen/statistics_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/statistics_range" android:layout_weight="0.5" />
+        <TextView android:textColor="@color/colorAccent" android:gravity="center_horizontal" android:id="@id/textview_stats_range_from" android:padding="@dimen/statistics_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_short_pattern" android:layout_weight="0.5" />
+        <TextView android:textColor="@color/colorAccent" android:gravity="center_horizontal" android:id="@id/textview_stats_range_to" android:padding="@dimen/statistics_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_short_pattern" android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/statistics_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <TextView android:paddingLeft="@dimen/statistics_padding_small" android:paddingTop="@dimen/statistics_padding" android:paddingBottom="@dimen/statistics_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/statistics_group_by" android:layout_weight="0.25" />
+        <Spinner android:id="@id/spinner_stats_group_by" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.25" android:spinnerMode="dropdown" />
+        <TextView android:paddingLeft="@dimen/statistics_padding_small" android:paddingTop="@dimen/statistics_padding" android:paddingBottom="@dimen/statistics_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/statistics_y_values" android:layout_weight="0.25" />
+        <Spinner android:id="@id/spinner_stats_values" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.25" android:spinnerMode="dropdown" />
+    </LinearLayout>
+</LinearLayout>

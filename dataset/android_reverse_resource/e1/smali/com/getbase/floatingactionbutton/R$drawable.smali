@@ -1,0 +1,67 @@
+.class public final Lcom/getbase/floatingactionbutton/R$drawable;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/getbase/floatingactionbutton/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "drawable"
+.end annotation
+
+
+# static fields
+.field private static final transient synthetic $jacocoData:[Z = null
+
+.field public static final fab_bg_mini:I = 0x7f020087
+
+.field public static final fab_bg_normal:I = 0x7f020088
+
+
+# direct methods
+.method private static synthetic $jacocoInit()[Z
+    .locals 4
+
+    sget-object v0, Lcom/getbase/floatingactionbutton/R$drawable;->$jacocoData:[Z
+
+    if-nez v0, :cond_0
+
+    const-wide v0, 0x29a70baa15e071a9L    # 4.906354310356337E-108
+
+    const-string v2, "com/getbase/floatingactionbutton/R$drawable"
+
+    const/4 v3, 0x1
+
+    invoke-static {v0, v1, v2, v3}, Lorg/jacoco/agent/rt/internal_b0d6a23/Offline;->getProbes(JLjava/lang/String;I)[Z
+
+    move-result-object v0
+
+    sput-object v0, Lcom/getbase/floatingactionbutton/R$drawable;->$jacocoData:[Z
+
+    :cond_0
+    return-object v0
+.end method
+
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    invoke-static {}, Lcom/getbase/floatingactionbutton/R$drawable;->$jacocoInit()[Z
+
+    move-result-object v0
+
+    .line 40
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    aput-boolean v2, v0, v1
+
+    return-void
+.end method

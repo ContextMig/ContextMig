@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/customViewStyles"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ads_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/three_dps" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/activity_main_app_id" android:layout_above="@id/ads_holder" style="@style/matchMatch"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListView android:id="@id/lvShoppingList" android:background="@drawable/custom_list_view_backgroud" android:animateLayoutChanges="true" style="@style/customListViewStyles" />
+    </LinearLayout>
+</RelativeLayout>

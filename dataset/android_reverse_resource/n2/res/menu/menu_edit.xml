@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_note_colour" android:id="@id/action_note_colour" android:orderInCategory="100" android:title="@string/action_note_colour" app:showAsAction="ifRoom" />
+    <item android:id="@id/action_font_size" android:orderInCategory="102" android:title="@string/action_font_size" app:showAsAction="never" />
+    <item android:id="@id/action_hide_show_body" android:orderInCategory="103" android:title="@string/action_hide_body" app:showAsAction="never" />
+</menu>

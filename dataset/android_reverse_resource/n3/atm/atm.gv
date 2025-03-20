@@ -1,0 +1,17 @@
+digraph "CallGraph" {
+    node [style="rounded,bold,filled"];
+    node [shape=box];
+    "Root" [label="Root",];
+    "me.writeily.PromptPinActivity: void onCreate(android.os.Bundle)" [label="PromptPinActivity(onCreate)",];
+    "Root"->"me.writeily.PromptPinActivity: void onCreate(android.os.Bundle)" [label="SYMBOLIC",style=bold,color=black,];
+    "me.writeily.MainActivity: void onCreate(android.os.Bundle)" [label="MainActivity(onCreate)",];
+    "me.writeily.PromptPinActivity: void onCreate(android.os.Bundle)"->"me.writeily.MainActivity: void onCreate(android.os.Bundle)" [label="IPC",style=bold,color=dodgerblue,];
+    "me.writeily.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)" [label="MainActivity(onOptionsItemSelected)",];
+    "me.writeily.PromptPinActivity: void onCreate(android.os.Bundle)"->"me.writeily.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)" [label="IPC",style=bold,color=dodgerblue,];
+    "me.writeily.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)" [label="MainActivity(onCreateOptionsMenu)",];
+    "me.writeily.PromptPinActivity: void onCreate(android.os.Bundle)"->"me.writeily.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)" [label="IPC",style=bold,color=dodgerblue,];
+    "me.writeily.PinActivity: void onCreate(android.os.Bundle)" [label="PinActivity(onCreate)",];
+    "me.writeily.PromptPinActivity: void onCreate(android.os.Bundle)"->"me.writeily.PinActivity: void onCreate(android.os.Bundle)" [label="IPC",style=bold,color=dodgerblue,];
+    "me.writeily.AlphanumericPinActivity: void onCreate(android.os.Bundle)" [label="AlphanumericPinActivity(onCreate)",];
+    "me.writeily.PromptPinActivity: void onCreate(android.os.Bundle)"->"me.writeily.AlphanumericPinActivity: void onCreate(android.os.Bundle)" [label="IPC",style=bold,color=dodgerblue,];
+}

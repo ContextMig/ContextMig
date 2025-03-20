@@ -1,0 +1,51 @@
+.class public Lcom/dropbox/sync/android/DbxRuntimeException$Closed;
+.super Lcom/dropbox/sync/android/DbxRuntimeException$BadState;
+.source "DbxRuntimeException.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dropbox/sync/android/DbxRuntimeException;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Closed"
+.end annotation
+
+
+# static fields
+.field public static final serialVersionUID:J
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;)V
+    .locals 2
+    .param p1, "message"    # Ljava/lang/String;
+
+    .prologue
+    .line 119
+    sget-object v0, Lcom/dropbox/sync/android/DbxError;->CLOSED:Lcom/dropbox/sync/android/DbxError;
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v0, p1, v1}, Lcom/dropbox/sync/android/DbxRuntimeException$BadState;-><init>(Lcom/dropbox/sync/android/DbxError;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 120
+    return-void
+.end method
+
+.method constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+    .param p1, "message"    # Ljava/lang/String;
+    .param p2, "userError"    # Ljava/lang/String;
+
+    .prologue
+    .line 122
+    sget-object v0, Lcom/dropbox/sync/android/DbxError;->CLOSED:Lcom/dropbox/sync/android/DbxError;
+
+    invoke-direct {p0, v0, p1, p2}, Lcom/dropbox/sync/android/DbxRuntimeException$BadState;-><init>(Lcom/dropbox/sync/android/DbxError;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 123
+    return-void
+.end method

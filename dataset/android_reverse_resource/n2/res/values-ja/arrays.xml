@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colourNames">
+        <item>青</item>
+        <item>青緑</item>
+        <item>緑</item>
+        <item>黄</item>
+        <item>オレンジ</item>
+        <item>赤</item>
+        <item>ピンク</item>
+        <item>紫</item>
+        <item>白</item>
+    </string-array>
+    <string-array name="fontSizeNames">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+    </string-array>
+</resources>

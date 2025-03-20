@@ -1,0 +1,22 @@
+version: 2.11.0
+apkFileName: org.asdtm.goodweather.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 14
+  targetSdkVersion: 22
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 13
+  versionName: 4.4
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- png

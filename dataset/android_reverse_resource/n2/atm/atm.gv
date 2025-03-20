@@ -1,0 +1,13 @@
+digraph "CallGraph" {
+    node [style="rounded,bold,filled"];
+    node [shape=box];
+    "Root" [label="Root",];
+    "com.moonpi.swiftnotes.MainActivity: void onCreate(android.os.Bundle)" [label="MainActivity(onCreate)",];
+    "Root"->"com.moonpi.swiftnotes.MainActivity: void onCreate(android.os.Bundle)" [label="SYMBOLIC",style=bold,color=black,];
+    "com.moonpi.swiftnotes.MainActivity$2: void onClick(android.view.View)" [label="MainActivity$2(onClick)",];
+    "com.moonpi.swiftnotes.MainActivity: void onCreate(android.os.Bundle)"->"com.moonpi.swiftnotes.MainActivity$2: void onClick(android.view.View)" [label="GUI (NULL)",style=bold,color=firebrick,];
+    "com.moonpi.swiftnotes.MainActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)" [label="MainActivity(onItemClick)",];
+    "com.moonpi.swiftnotes.MainActivity: void onCreate(android.os.Bundle)"->"com.moonpi.swiftnotes.MainActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)" [label="GUI (2131427419)",style=bold,color=firebrick,];
+    "com.moonpi.swiftnotes.MainActivity$1: void onScroll(android.widget.AbsListView,int,int,int)" [label="MainActivity$1(onScroll)",];
+    "com.moonpi.swiftnotes.MainActivity: void onCreate(android.os.Bundle)"->"com.moonpi.swiftnotes.MainActivity$1: void onScroll(android.widget.AbsListView,int,int,int)" [label="GUI (2131427419)",style=bold,color=firebrick,];
+}

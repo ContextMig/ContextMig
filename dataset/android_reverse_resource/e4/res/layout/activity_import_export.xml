@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <EditText android:textSize="12.0sp" android:gravity="top" android:layout_gravity="center|top" android:id="@id/et_import_data" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_import" android:background="@drawable/selector_add_income" android:padding="@dimen/normal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_import" android:layout_weight="1.0" />
+            <Button android:layout_gravity="center" android:id="@id/btn_export" android:background="@drawable/selector_report" android:padding="@dimen/normal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/export" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

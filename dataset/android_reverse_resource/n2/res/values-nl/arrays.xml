@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colourNames">
+        <item>Blauw</item>
+        <item>Groenblauw</item>
+        <item>Groen</item>
+        <item>Geel</item>
+        <item>Oranje</item>
+        <item>Rood</item>
+        <item>Roze</item>
+        <item>Paars</item>
+        <item>Wit</item>
+    </string-array>
+    <string-array name="fontSizeNames">
+        <item>Klein</item>
+        <item>Gemiddeld</item>
+        <item>Groot</item>
+    </string-array>
+</resources>

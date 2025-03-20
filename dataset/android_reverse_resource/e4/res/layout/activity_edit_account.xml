@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.design.widget.TextInputLayout android:id="@id/til_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/et_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title" android:maxLines="1" android:singleLine="true" android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/til_goal" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/et_goal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/goal" android:maxLines="1" android:singleLine="true" android:inputType="numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:theme="@style/Text_Hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color" />
+            <FrameLayout android:background="@color/divider_grey" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_margin="@dimen/quarter_margin">
+                <View android:id="@id/view_color" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fabDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/ic_done" app:layout_anchorGravity="end|bottom|center" />
+</android.support.design.widget.CoordinatorLayout>

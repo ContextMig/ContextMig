@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/calendar_grid_item_$_linearlayout_parent" android:background="@drawable/calendar_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="@color/purple_14" android:id="@id/calendar_grid_item_$_textview_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="24" />
+    <chan.android.app.pocketnote.app.calendar.BucketNoteView android:id="@id/calendar_grid_item_$_bucket_note_view" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" note:row="8" note:column="10" note:size="10.0dip" xmlns:note="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

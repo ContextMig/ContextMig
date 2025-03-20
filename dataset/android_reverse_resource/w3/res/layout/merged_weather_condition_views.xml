@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/background_alternate_even" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/weather_conditions_image_view" android:layout_width="@dimen/icon_dimension_horizontal" android:layout_height="@dimen/icon_dimension_vertical" android:layout_margin="@dimen/gap_large" android:contentDescription="@string/icon_content_description_weather_conditions" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/weather_conditions_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextView.LargeText" />
+    </LinearLayout>
+</FrameLayout>

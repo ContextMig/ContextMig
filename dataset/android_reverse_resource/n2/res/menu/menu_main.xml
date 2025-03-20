@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/abc_ic_search_api_material" android:id="@id/action_search" android:hint="@string/action_search" android:orderInCategory="100" android:title="@string/action_search" app:showAsAction="collapseActionView|ifRoom" app:actionViewClass="android.support.v7.widget.SearchView" />
+    <item android:id="@id/action_backup" android:orderInCategory="101" android:title="@string/action_backup" app:showAsAction="never" />
+    <item android:id="@id/action_restore" android:orderInCategory="102" android:title="@string/action_restore" app:showAsAction="never" />
+    <item android:id="@id/action_rate_app" android:orderInCategory="103" android:title="@string/action_rate_app" app:showAsAction="never" />
+</menu>

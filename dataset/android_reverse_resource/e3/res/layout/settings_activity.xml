@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="bottom" android:id="@id/current_currency_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_selected_currency_text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <Button android:id="@id/button3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/change_currency_button_text" android:layout_weight="0.2" android:onClick="onAClick" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="bottom" android:id="@id/likeView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/like_the_app_text" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff0000ff" android:layout_gravity="bottom" android:id="@id/likeViewClick" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/rate_it_text" android:onClick="likeClicked" />
+    </LinearLayout>
+</LinearLayout>

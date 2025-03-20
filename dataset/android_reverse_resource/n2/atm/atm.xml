@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cgNode>
+    <node>Root</node>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>com.moonpi.swiftnotes.MainActivity: void onCreate(android.os.Bundle)</node>
+            <outgoingEdge>
+                <label>NULL</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>com.moonpi.swiftnotes.MainActivity$2: void onClick(android.view.View)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>2131427419</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>com.moonpi.swiftnotes.MainActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>2131427419</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>com.moonpi.swiftnotes.MainActivity$1: void onScroll(android.widget.AbsListView,int,int,int)</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+</cgNode>

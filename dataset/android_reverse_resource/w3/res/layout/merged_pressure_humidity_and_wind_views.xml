@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?themed_gradient_drawable" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="start" android:id="@id/atmospheric_pressure_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/gap_small" style="@style/TextView.MediumText" />
+    <TextView android:gravity="start" android:id="@id/humidity_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/gap_small" style="@style/TextView.MediumText" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/icon_dimension_horizontal" android:layout_height="fill_parent" android:src="@drawable/wind" android:scaleType="centerCrop" android:contentDescription="@string/icon_content_description_wind" />
+        <TextView android:gravity="start" android:id="@id/wind_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/gap_small" style="@style/TextView.MediumText" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ordenation_alphabetical_style_list_array">
+        <item>Natural ordination</item>
+        <item>Ascending Alphabetical Order</item>
+        <item>Reverse Alphabetical Order</item>
+    </string-array>
+    <string-array name="ordenation_checked_style_list_array">
+        <item>Natural ordination</item>
+        <item>Checked down</item>
+        <item>Checked up</item>
+    </string-array>
+    <string-array name="ordenation_style_list_values">
+        <item></item>
+        <item>ASC</item>
+        <item>DESC</item>
+    </string-array>
+</resources>

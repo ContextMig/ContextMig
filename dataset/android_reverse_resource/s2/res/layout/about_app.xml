@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" style="@style/customViewStyles"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_marginBottom="8.0dip" style="@style/matchWrap">
+        <ImageButton android:id="@id/about_bt_icon_shopping_list" android:background="@color/gray_backgourd" android:layout_marginRight="10.0dip" android:src="@drawable/ic_launcher" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="95.0dip" android:contentDescription="@string/app_name" android:layout_marginEnd="10.0dip" style="@style/wrapWrap" />
+        <LinearLayout android:orientation="vertical" android:layout_marginRight="10.0dip" style="@style/wrapWrap">
+            <TextView android:textSize="20.0sp" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/app_name" android:ems="30" style="@style/wrapWrap" />
+            <TextView android:textSize="12.0sp" android:id="@id/about_tv_version_code" android:text="@string/about_app_code" style="@style/wrapWrap" />
+            <TextView android:textSize="12.0sp" android:id="@id/about_tv_version_app" android:text="@string/about_app_version" style="@style/wrapWrap" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:id="@id/about_tv_version_android" android:text="@string/about_android_version" style="@style/wrapWrap" />
+    <TextView android:textSize="12.0sp" android:id="@id/about_tv_install_date" android:text="@string/about_app_install_date" style="@style/wrapWrap" />
+    <TextView android:textSize="12.0sp" android:id="@id/about_tv_update_date" android:text="@string/about_app_update_date" style="@style/wrapWrap" />
+    <TextView android:textSize="12.0sp" android:id="@id/about_tv_description" android:layout_marginTop="10.0dip" android:text="@string/about_app_description" style="@style/wrapWrap" />
+    <LinearLayout android:orientation="horizontal" android:layout_marginTop="10.0dip" style="@style/wrapWrap">
+        <TextView android:textSize="12.0sp" android:text="@string/about_app_contact_me" style="@style/wrapWrap" />
+        <TextView android:textSize="12.0sp" android:textColorLink="@color/azul" android:autoLink="email" android:linksClickable="true" android:id="@id/about_tv_contact" android:clickable="true" android:text="@string/no_description" style="@style/wrapWrap" />
+    </LinearLayout>
+</LinearLayout>

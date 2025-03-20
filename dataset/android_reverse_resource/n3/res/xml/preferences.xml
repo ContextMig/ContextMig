@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/app_settings">
+        <ListPreference android:entries="@array/themes_array" android:title="@string/pref_theme" android:key="@string/pref_theme_key" android:defaultValue="@string/theme_light" android:dialogTitle="@string/pref_theme" android:entryValues="@array/themes_array" />
+        <CheckBoxPreference android:title="@string/pref_remember_directory" android:key="@string/pref_remember_directory_key" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/pref_preview_first" android:key="@string/pref_preview_first_key" android:defaultValue="false" />
+        <ListPreference android:entries="@array/possibleLocksStrings" android:id="@id/pref_lock_type" android:title="@string/pref_lock_settings" android:key="@string/pref_lock_type_key" android:defaultValue="0" android:entryValues="@array/possibleLocksValues" />
+        <Preference android:id="@id/pref_root_directory" android:title="@string/pref_root_directory_title" android:key="@string/pref_root_directory" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/editor_settings">
+        <ListPreference android:entries="@array/fonts_array" android:title="@string/pref_font_choice" android:key="@string/pref_font_choice_key" android:defaultValue="sans-serif-light" android:dialogTitle="@string/pref_font_choice" android:entryValues="@array/fonts_type_array" />
+        <ListPreference android:entries="@array/font_size_choices_array" android:title="@string/pref_font_size" android:key="@string/pref_font_size_key" android:defaultValue="21" android:dialogTitle="@string/pref_font_size" android:entryValues="@array/font_size_array" />
+        <CheckBoxPreference android:title="@string/pref_show_markdown_shortcuts" android:key="@string/pref_show_markdown_shortcuts_key" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_highlighting_activated" android:key="@string/pref_highlighting_activated_key" android:defaultValue="true" />
+        <EditTextPreference android:numeric="integer" android:title="@string/pref_highlighting_delay" android:key="@string/pref_highlighting_delay_key" android:summary="@string/pref_highlighting_delay_summary" android:dependency="@string/pref_highlighting_activated_key" android:defaultValue="500" android:inputType="number" />
+        <CheckBoxPreference android:title="@string/pref_smart_shortcuts" android:key="@string/pref_smart_shortcuts_key" android:summary="@string/pref_smart_shortcuts_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/social">
+        <Preference android:title="@string/pref_twitter" android:key="@string/pref_twitter_key">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/twitter_url" />
+        </Preference>
+        <Preference android:title="@string/pref_email" android:key="@string/pref_email_key">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/writeily_email">
+                <extra android:name="android.intent.extra.SUBJECT" android:value="@string/email_header" />
+            </intent>
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/meta">
+        <Preference android:title="@string/pref_rate_writeily" android:key="@string/pref_rate_writeily_key">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/writeily_url" />
+        </Preference>
+        <Preference android:title="@string/pref_donate_writeily" android:key="@string/pref_donate_writeily_key">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/writeily_donate_url" />
+        </Preference>
+        <Preference android:title="@string/pref_about_dialog_title" android:key="@string/pref_about_key" />
+    </PreferenceCategory>
+</PreferenceScreen>

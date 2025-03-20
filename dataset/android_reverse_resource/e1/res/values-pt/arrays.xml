@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_edit_expense_choices">
+        <item>Modificar despesa</item>
+        <item>Excluir despesa</item>
+    </string-array>
+    <string-array name="dialog_edit_income_choices">
+        <item>Modificar receita</item>
+        <item>Excluir receita</item>
+    </string-array>
+    <string-array name="dialog_edit_recurring_expense_choices">
+        <item>Modificar esta ocorrência</item>
+        <item>Excluir apenas esta ocorrência</item>
+        <item>Excluir as próximas ocorrências</item>
+        <item>Excluir as ocorrências anteriores</item>
+        <item>Excluir tudo</item>
+    </string-array>
+    <string-array name="dialog_edit_recurring_income_choices">
+        <item>Modificar esta ocorrência</item>
+        <item>Excluir apenas esta ocorrência</item>
+        <item>Excluir as próximas ocorrências</item>
+        <item>Excluir as ocorrências anteriores</item>
+        <item>Excluir tudo</item>
+    </string-array>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_sort_dialog">
+        <item>A - Z</item>
+        <item>Unchecked - checked</item>
+        <item>Checked - unchecked</item>
+        <item>Newest - oldest</item>
+        <item>Oldest - newest</item>
+    </string-array>
+    <string-array name="context_menu_main_activity">
+        <item>@string/edit</item>
+        <item>@string/delete</item>
+        <item>@string/share</item>
+    </string-array>
+    <string-array name="pref_language_list_titles">
+        <item>@string/text_default</item>
+        <item>English</item>
+        <item>Polski</item>
+    </string-array>
+    <string-array name="pref_language_list_values">
+        <item></item>
+        <item>en</item>
+        <item>pl</item>
+    </string-array>
+    <string-array name="quantity_units_array">
+        <item>@string/radio_quantity_unit_pcs</item>
+        <item>@string/radio_quantity_unit_l</item>
+        <item>@string/radio_quantity_unit_ml</item>
+        <item>@string/radio_quantity_unit_g</item>
+        <item>@string/radio_quantity_unit_kg</item>
+        <item>@string/radio_quantity_unit_m</item>
+        <item>@string/radio_quantity_unit_fl_oz</item>
+        <item>@string/radio_quantity_unit_gal</item>
+        <item>@string/radio_quantity_unit_oz</item>
+        <item>@string/radio_quantity_unit_lb</item>
+        <item>@string/radio_quantity_unit_ft</item>
+    </string-array>
+    <string-array name="quantity_units_codes_array">
+        <item>\#pcs</item>
+        <item>\#l</item>
+        <item>\#ml</item>
+        <item>\#g</item>
+        <item>\#kg</item>
+        <item>\#m</item>
+        <item>\#fl oz</item>
+        <item>\#gal</item>
+        <item>\#oz</item>
+        <item>\#lb</item>
+        <item>\#ft</item>
+    </string-array>
+</resources>

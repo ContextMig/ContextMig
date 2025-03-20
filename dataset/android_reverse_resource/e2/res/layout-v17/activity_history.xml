@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:textColor="@color/black" android:id="@id/prev_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_navigate_before_black_48dp" android:text="@string/previous" android:layout_weight="2.0" android:contentDescription="@string/previous" style="?android:attr/buttonBarButtonStyle" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="40.0sp" android:textStyle="bold" android:id="@id/month_expense" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/date_month_pattern" android:layout_weight="1.0" android:textAlignment="center" />
+        <ImageButton android:textColor="@color/black" android:id="@id/next_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_navigate_next_black_48dp" android:text="@string/next" android:layout_weight="2.0" android:contentDescription="@string/next" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="10.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@id/listView" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" android:layout_weight="9.0" />
+        <LinearLayout android:background="@color/green" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total" android:textAlignment="textStart" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="end" android:id="@id/total_history" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Large Text" android:textAlignment="textEnd" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

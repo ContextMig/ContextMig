@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cgNode>
+    <node>Root</node>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>pl.com.andrzejgrzyb.shoppinglist.MainActivity: boolean onContextItemSelected(android.view.MenuItem)</node>
+            <outgoingEdge>
+                <label>0</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity: void onCreate(android.os.Bundle)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>2</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: android.content.Intent createShareIntent(java.lang.String)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>1</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>android.support.v4.widget.SimpleCursorAdapter: android.database.Cursor swapCursor(android.database.Cursor)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>0</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>pl.com.andrzejgrzyb.shoppinglist.ShoppingListEditActivity: void onStart()</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>1</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: android.database.Cursor getAllShoppingLists()</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>2</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: java.lang.String createShareString(android.database.Cursor,java.lang.String,java.lang.String)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>1</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: boolean deleteShoppingList(long)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>2</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>pl.com.andrzejgrzyb.shoppinglist.data.DbUtilities: android.database.Cursor getShoppingListItemsCursor(long)</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>pl.com.andrzejgrzyb.shoppinglist.MainActivity: void onCreate(android.os.Bundle)</node>
+            <outgoingEdge>
+                <label>2131689606</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>pl.com.andrzejgrzyb.shoppinglist.MainActivity$1: void onClick(android.view.View)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <label>NULL</label>
+                <type>GUI</type>
+                <toNode>
+                    <node>pl.com.andrzejgrzyb.shoppinglist.MainActivity$3: void onItemClick(android.widget.AdapterView,android.view.View,int,long)</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+</cgNode>

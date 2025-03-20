@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/AppTheme" android:id="@id/import_activity_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="@color/light_grey" android:gravity="center" android:id="@id/empty_hint" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/grey" android:id="@id/working_directory" android:paddingLeft="32.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="5.0dip" />
+    <Button android:textSize="16.0sp" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/import_header_btn" android:background="@color/lighter_grey" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:text="@string/navigate_up_folder" android:layout_below="@id/working_directory" android:textAllCaps="false" android:fontFamily="sans-serif" />
+    <ListView android:layout_gravity="start" android:id="@id/notes_listview" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/light_grey" android:choiceMode="singleChoice" android:layout_below="@id/import_header_btn" />
+</RelativeLayout>

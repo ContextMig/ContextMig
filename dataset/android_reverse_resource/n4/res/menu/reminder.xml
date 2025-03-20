@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_action_dismiss" android:id="@id/reminder_menu_$_dismiss" android:orderInCategory="0" android:title="Dismiss" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_action_calendar_info" android:id="@id/reminder_menu_$_info" android:orderInCategory="1" android:title="Info" android:showAsAction="always" />
+</menu>

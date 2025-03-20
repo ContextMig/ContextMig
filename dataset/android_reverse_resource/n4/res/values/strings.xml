@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abs__action_bar_home_description">Navigate home</string>
+    <string name="abs__action_bar_up_description">Navigate up</string>
+    <string name="abs__action_menu_overflow_description">More options</string>
+    <string name="abs__action_mode_done">Done</string>
+    <string name="abs__activity_chooser_view_see_all">See all...</string>
+    <string name="abs__activitychooserview_choose_application">Choose an application</string>
+    <string name="abs__searchview_description_clear">Clear query</string>
+    <string name="abs__searchview_description_query">Search query</string>
+    <string name="abs__searchview_description_search">Search</string>
+    <string name="abs__searchview_description_submit">Submit query</string>
+    <string name="abs__searchview_description_voice">Voice search</string>
+    <string name="abs__shareactionprovider_share_with">Share with</string>
+    <string name="abs__shareactionprovider_share_with_application">Share with %s</string>
+    <string name="app_name">Pocket Note</string>
+    <string name="back_button_label">Back</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
+    <string name="next_button_label">Next</string>
+    <string name="skip_button_label">Skip</string>
+</resources>

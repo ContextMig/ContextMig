@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@id/table_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:id="@id/table_row0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/button00" android:background="@color/c00" style="@style/little_square" />
+        <Button android:id="@id/button01" android:background="@color/c01" style="@style/little_square" />
+        <Button android:id="@id/button02" android:background="@color/c02" style="@style/little_square" />
+    </TableRow>
+    <TableRow android:id="@id/table_row1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/button10" android:background="@color/c10" style="@style/little_square" />
+        <Button android:id="@id/button11" android:background="@color/c11" style="@style/little_square" />
+        <Button android:id="@id/button12" android:background="@color/c12" style="@style/little_square" />
+    </TableRow>
+    <TableRow android:id="@id/table_row2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/button20" android:background="@color/c20" style="@style/little_square" />
+        <Button android:id="@id/button21" android:background="@color/c21" style="@style/little_square" />
+        <Button android:id="@id/button22" android:background="@color/c22" style="@style/little_square" />
+    </TableRow>
+</TableLayout>

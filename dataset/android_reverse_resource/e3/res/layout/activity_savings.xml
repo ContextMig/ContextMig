@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/textView6" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="SAVINGS" android:layout_weight="0.15" />
+    <SeekBar android:layout_gravity="center" android:id="@id/seekBar1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:max="1000" android:layout_weight="0.1" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1.0" android:layout_weight="0.1">
+        <EditText android:id="@id/editText" android:layout_width="60.0dip" android:layout_height="wrap_content" android:ems="10" android:maxLength="5" android:inputType="numberDecimal" />
+        <TextView android:textSize="20.0sp" android:id="@id/textView7" android:layout_width="20.0dip" android:layout_height="wrap_content" android:text="%" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1.0" android:layout_weight="0.05">
+        <TextView android:gravity="right" android:id="@id/dailyText" android:paddingLeft="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Daily: " android:layout_weight="0.2" />
+        <TextView android:gravity="left" android:id="@id/dailyAmount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="$ 50" android:layout_weight="0.25" />
+        <TextView android:gravity="right" android:id="@id/monthlyText" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Monthly: " android:layout_weight="0.2" />
+        <TextView android:gravity="left" android:id="@id/monthlyAmount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="$ 1500" android:layout_weight="0.3" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1.0" android:layout_weight="0.05">
+        <TextView android:gravity="right" android:id="@id/weeklyText" android:paddingLeft="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Weekly: " android:layout_weight="0.2" />
+        <TextView android:gravity="left" android:id="@id/weeklyAmount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="$ 350" android:layout_weight="0.25" />
+        <TextView android:gravity="right" android:id="@id/yearlyText" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Yearly: " android:layout_weight="0.2" />
+        <TextView android:gravity="left" android:id="@id/yearlyAmount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="$ 15000" android:layout_weight="0.3" />
+    </LinearLayout>
+    <TextView android:textSize="20.0sp" android:gravity="bottom|center" android:id="@id/textView8" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="TOTAL SAVED" android:layout_weight="0.15" />
+    <TextView android:textSize="35.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/totalSavedText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="$ 12351.21" android:layout_weight="0.2" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1.0" android:layout_weight="0.25">
+        <Button android:id="@id/resetButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" android:layout_weight="0.3" />
+        <Button android:id="@id/button4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Button" android:layout_weight="0.3" />
+    </LinearLayout>
+</LinearLayout>

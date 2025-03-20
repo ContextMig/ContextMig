@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="br.com.activity" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:debuggable="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="br.com.vansact.MainApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_new" android:name="br.com.vansact.AddItemShoppingList" android:parentActivityName="br.com.vansact.MainApp">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="br.com.vansact.MainApp"/>
+        </activity>
+        <activity android:label="@string/xml_import" android:name="br.com.vansact.ShoppingListImporter" android:parentActivityName="br.com.vansact.MainApp">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="br.com.vansact.MainApp"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/octet-stream"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:host="*"/>
+                <data android:mimeType="*/*"/>
+                <data android:pathPattern=".*\\.slx"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_new" android:name="br.com.vansprefs.UserPreferences"/>
+        <receiver android:exported="false" android:name="br.com.vansschedule.AlarmeNotificationShoppingList">
+            <intent-filter>
+                <action android:name="AlarmeNotificationShoppingList"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"/>
+    </application>
+</manifest>

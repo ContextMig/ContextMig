@@ -1,0 +1,12 @@
+This test case is testing the functionality of creating a new task, verifying its creation, and then deleting the task in the Privacy Friendly To-Do List application.
+
+The detailed process with serial numbers is as follows:
+
+1. ACTION (Button, org.secuso.privacyfriendlytodolist:id/btn_skip, (), click, NULL) : Click on the 'Skip' button to bypass any tutorial or introduction screens.
+2. ACTION (ImageButton, org.secuso.privacyfriendlytodolist:id/fab_new_task, (), click, NULL) : Click on the 'New Task' button to initiate the creation of a new task.
+3. ACTION (EditText, org.secuso.privacyfriendlytodolist:id/et_new_task_name, (), input, "Sample Todo") : Input the task name 'Sample Todo' into the task name field.
+4. ACTION (Button, org.secuso.privacyfriendlytodolist:id/bt_new_task_ok, (), click, NULL) : Click on the 'Okay' button to confirm and create the new task.
+5. ASSERT (TextView, org.secuso.privacyfriendlytodolist:id/tv_exlv_task_name, (), wait_until_text_presence, "Sample Todo") : Verify that the task with the name 'Sample Todo' is present within 10 seconds.
+6. ACTION (TextView, org.secuso.privacyfriendlytodolist:id/tv_exlv_task_name, (), long_press, NULL) : Long press on the task named 'Sample Todo' to open the task options.
+7. ACTION (TextView, android:id/title, (), click, NULL) : Click on the 'Delete To-Do Task' option to delete the task.
+8. ASSERT (, , (), wait_until_text_invisible, "Sample Todo") : Verify that the task with the name 'Sample Todo' is no longer visible within 10 seconds.

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cgNode>
+    <node>Root</node>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>cz.martykan.forecastie.activities.SplashActivity: void onCreate(android.os.Bundle)</node>
+            <outgoingEdge>
+                <type>IPC</type>
+                <toNode>
+                    <node>cz.martykan.forecastie.activities.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <type>IPC</type>
+                <toNode>
+                    <node>cz.martykan.forecastie.activities.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <type>IPC</type>
+                <toNode>
+                    <node>cz.martykan.forecastie.activities.MainActivity: void onCreate(android.os.Bundle)</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+</cgNode>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/purple_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/calendar_$_viewflipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/calendar_$_linearlayout_parent" android:background="@color/purple_0" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/calendar_$_linearlayout_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/calendar_$_imageview_left" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_left" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/calendar_$_imageview_right" android:background="@android:drawable/list_selector_background" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_right" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/purple_10" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/calendar_$_textview_month" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="August" android:textAlignment="center" />
+                </RelativeLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:weightSum="7.0">
+                    <TextView android:textColor="@color/sunday" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="SUN" android:layout_weight="1.0" style="@style/WeekDayTextView" />
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="MON" android:layout_weight="1.0" style="@style/WeekDayTextView" />
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="TUE" android:layout_weight="1.0" style="@style/WeekDayTextView" />
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="WED" android:layout_weight="1.0" style="@style/WeekDayTextView" />
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="THU" android:layout_weight="1.0" style="@style/WeekDayTextView" />
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="FRI" android:layout_weight="1.0" style="@style/WeekDayTextView" />
+                    <TextView android:textColor="@color/saturday" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="SAT" android:layout_weight="1.0" style="@style/WeekDayTextView" />
+                </LinearLayout>
+            </LinearLayout>
+            <GridView android:gravity="center" android:id="@id/calendar_$_gridview" android:paddingLeft="1.0dip" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:stretchMode="columnWidth" android:numColumns="7" android:layout_below="@id/calendar_$_linearlayout_top" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:weightSum="3.0" android:layout_alignParentBottom="true">
+                <Button android:id="@id/calendar_$_button_prev" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="Previous" android:layout_weight="1.0" style="@style/ReminderButton" />
+                <Button android:id="@id/calendar_$_button_jump" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="Jump" android:layout_weight="1.0" style="@style/ReminderButton" />
+                <Button android:id="@id/calendar_$_button_next" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="Next" android:layout_weight="1.0" style="@style/ReminderButton" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ListView android:id="@id/calendar_$_listview_notes" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:divider="#00000000" android:dividerHeight="10.0px" />
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/purple_14" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not Found" />
+    </ViewFlipper>
+</LinearLayout>

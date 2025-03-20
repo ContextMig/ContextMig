@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/half_margin" android:paddingBottom="@dimen/half_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/activity_horizontal_margin" android:paddingEnd="@dimen/activity_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:theme="@style/Text_Body1" android:gravity="start" android:layout_gravity="top" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="New Text" android:layout_weight="1.0" />
+    <TextView android:theme="@style/Text_Body2" android:gravity="end" android:id="@id/tv_cur_sum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" />
+    <TextView android:theme="@style/Text_Body1" android:gravity="end" android:id="@id/tv_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" android:fontFamily="monospace" android:paddingStart="5.0dip" android:paddingEnd="@dimen/zero_margin" />
+</LinearLayout>

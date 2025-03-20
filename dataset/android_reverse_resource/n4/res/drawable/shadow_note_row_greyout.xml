@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/rectangle_vimeo_grey_shadow" />
+    <item android:drawable="@drawable/rectangle_vimeo_grey" android:bottom="4.0px" />
+</layer-list>

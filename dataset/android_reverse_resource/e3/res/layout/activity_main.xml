@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:textStyle="bold" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:fontFamily="sans-serif"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="0.35">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="23.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/todays_budget_header" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="50.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/current_money" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/todays_budget_placeholder_text" android:layout_weight="0.25" android:fontFamily="sans-serif" />
+        <LinearLayout android:gravity="center_horizontal" android:background="@color/lightBlue" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/daily_amount_text" android:autoText="false" android:fontFamily="sans-serif" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/daily_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/daily_amount_placeholder_text" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.25">
+            <ImageButton android:id="@id/imageButton2" android:background="@null" android:layout_width="108.0dip" android:layout_height="120.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/plusbutton" android:scaleType="fitCenter" android:onClick="addMoney" />
+            <ImageButton android:id="@id/imageButton" android:background="@null" android:layout_width="108.0dip" android:layout_height="120.0dip" android:layout_marginLeft="50.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/minusbutton" android:scaleType="fitCenter" android:onClick="subtractMoney" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.15">
+            <com.google.android.gms.ads.AdView android:layout_gravity="bottom" android:id="@id/adView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+        </LinearLayout>
+    </LinearLayout>
+    <fragment android:name="com.kvannli.simonkvannli.dailybudget.NavigationDrawerFragment" android:layout_gravity="start" android:id="@id/navigation_drawer" android:layout_width="@dimen/navigation_drawer_width" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

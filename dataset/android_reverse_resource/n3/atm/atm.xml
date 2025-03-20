@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cgNode>
+    <node>Root</node>
+    <outgoingEdge>
+        <type>SYMBOLIC</type>
+        <toNode>
+            <node>me.writeily.PromptPinActivity: void onCreate(android.os.Bundle)</node>
+            <outgoingEdge>
+                <type>IPC</type>
+                <toNode>
+                    <node>me.writeily.MainActivity: void onCreate(android.os.Bundle)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <type>IPC</type>
+                <toNode>
+                    <node>me.writeily.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <type>IPC</type>
+                <toNode>
+                    <node>me.writeily.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <type>IPC</type>
+                <toNode>
+                    <node>me.writeily.PinActivity: void onCreate(android.os.Bundle)</node>
+                </toNode>
+            </outgoingEdge>
+            <outgoingEdge>
+                <type>IPC</type>
+                <toNode>
+                    <node>me.writeily.AlphanumericPinActivity: void onCreate(android.os.Bundle)</node>
+                </toNode>
+            </outgoingEdge>
+        </toNode>
+    </outgoingEdge>
+</cgNode>
